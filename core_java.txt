@@ -1,1 +1,841 @@
-JAVAC build a byte code (creation of byte code)source code--(javac)> byte code(.class)____> JVM-------> IBM 											AMD 											INTELJVM Install on top of processor (comes under jdk)company pays a money for recuirement for performing a CRUD operation.%JAVA_HOME%\bin ----> set the java home pickedup dynamically so using a % symbol=  is also called as initialize operatorlocal, static, parameter, instance (4 types of variable)for int=0, char=space, string=null ---> default value show in terminal when doesn't declare a valueTwo types of Data Typesprimitive: byte, int, float, char, long, double, short,boolean**object reference/non-primitive(**Every name should start with uppercase eg:Array) : Array, String, class, interface, custom class namechar  must initialize with a one value more than one value it converts in ASCII valueeg: char ch= 'M' + '0' ---> 77+48--- 125 (output= })static int gender='M' ----> integer takes ASCII value of M (and its compile and run)variable: Registered area allocated on the memory location.DataType: Type of value to be stored on the reference.stack stores : current line info, return type,  reference nameconstant pool stores the reference values//git bash commands git clone https://github.com/kaifmr77/Xworkz_arrays_java.git  ls   cd Xworkz_arrays_java   git status   git add .   git status   git commit -m "array files added"   git push origin mainchanging a branch in git bash  (main) branch to new array, variable branchgit checkout -b variableAndDatatyesgit add .git commit -m "Initial commit"git push origin variableAndDatatyesmoving to the old branch ---> git checkout mainArray: collection of refernce of same/similar typeuse of array is: store multi reference in a single refNameDeclaration and initialization:     Datatype ref[]={ref1, ref2,ref3};eg: String[] teaNames[]={"green chaa", "almond chaa"};Method: Group of java statement which is used to perform the operation on reference.Variables is also called as: Property/field/state/ref.Uses of Method:1.Reduce the code redundancy (reduce the repetitive code).JVM is one of the important component of java which is used to perform the 3 types of task.JVM (consisting of 3 subcomponent)---> 1.class loader(loading the class), 2. byte code verifier( verify the whether the byte code is security violated) 3. Interpreter(read the byte stream line-by-line help to execute the content on console)byte code is the only thing which are platform independent.os+processor ----> called as platform1.compile time is a combination of source code and byte code (compile time contains java compiler (managed by JDK)).2. run time contains JVM (managed by JRE. JRE which helps to provide a set of libraries)JVM FEATURES:*JVM provide a execution enviornment. 	*JVM loads the byte code (class loader). 	*JVM verifies the loaded byte code(byte code verifier). 	*JVM read byte code data continuous data (stream) line-by-line.***JRE=JVM+set of libraries.***JRE physically exists when we got installed. Whereas JVM is not physically available.*JRE is used to execute the java code.*JRE is minimum required for the execution of java code.25/02/2026JRE only run the code JVM which helps to create a run time environment (JVM is a part of JRE).JDK is considered as a fully featured developed software kit.JDK= JRE+development tools(compiler)JVM= provide run time environment.JRE= Execute the java code(byte code).JDK= Do development.Development tools are managed by JRE+JDKDevelopment tools consisting of compiler, debugger, java docs etc.(all this development tool are available in bin folder)Compile time managed by JDK.Run time managed by JRE (Means JVM managed by JRE).**JDK & JRE-----> PHYSICALLY AVAILABLE.JVM----> NOT PHYSICALLY AVAILABLE.constructor is defined as special type of method in java.constructor is invoked only when using a new keyword.javap----> convert .class to byte code.class in java is considered as blueprint, design, templateA class consisting of states(ref) and behaviour(method).object---> Multiple copies(instance) of a particular class.new keyword which help to getting a reference variables eg. (Bill bill--> ref)constructor syntax:        CustomdataType( Classname) referenceVariable= new Constructor();**static data---->**shared the same data among different copies(objects).parameterized and local variables---> does not have a default values.Non-static have a default values.one copy of a class---> staticmore than one copy of a class--->non-static10/03/2026main--> method is stored in a stack(in a frame).Metaspace--> stores a static and instance data.byte code---> platform independent.JVM, JRE, JDK---> platform dependent.JVM---> Always written in c/c++.1️⃣ Platform DependentPlatform dependent means the program depends on the operating system (Windows, Linux, Mac).Example languages: C, C++If you compile C code on Windows, the .exe file runs only on Windows, not on Linux.So we say:Platform dependent = Runs only on a specific OS2️⃣ Platform IndependentPlatform independent means the program can run on any operating system without changing the code.Java follows:Write Once, Run Anywhere (WORA)You write the program once, and it runs on Windows, Linux, Mac.3️⃣ How Java becomes Platform IndependentJava works in two steps.Step 1: Java Compiler.java file  →  javac  →  .class fileThe .class file is Bytecode.This bytecode is platform independent.That means the same .class file can run on any OS.Example:Gun ref = new Gun();---> The original data is stored in a Metaspace and its copy Gun ref1=new Gun(); it is stored instance memory.* In static content we updating the original content again and again (bcz it has a one copy)(Applicable to the one user only).*In instance content creating a copies of the same class and assigning the value to the each individual(limited to one object).1.When do you want to create a object in java?Ans: whenever to create a multiple copies of data(same class).Creating a object by using a default constructor then it creates a seperate instance memory and initialized a default value to it( eg initial value: int=0, boolean =false(provided by JVM using constructor)---> Next it initialize a original reference values by calling a -->eg: ref.gunId=70;Constructor is invoked using a new keyword.If Default constructor it initialize a value to the instance variables.this keyword----> help to differentiate between the instance and parameter(local variable)(or same) --> invoke (initialize) a instance member of a instance class.TWO TYPES OF OVERLOADINGMethod overloading--> static, instanceConstrucrtor overloadingOnce we declare a parameterized constructor in a class the default construtor is vanished.Execution Order of java program(code)1️⃣ Class loads2️⃣ Static block executes3️⃣ main() method starts4️⃣ Constructor executes (when object is created)11/03.2026HTML---> HTML means used to build the webpageMarkup---->Means uses a tags to design a structure of webpage.HTML Developed by Tim berners Lee.**Tags--->**Tags are the components(instruction) to built the webpage or display the content.**<>--->**Why this tags are used---> because brower will understand the content which comes under inside this brakets.HTML is a Case-insentives  eg: <HTML > same as <html>Elements---> Combination of opening tag<> + content + closing tag</>  eg: <body> Tarun </body>.👉 HTML attributes are used to provide additional information about HTML elements and are specified inside the opening tag in name-value pairs.<!DOCTYPE html>----> This is a declaration (not a tag) html means the current version of file.<html>---> root(container) element of a HTML document consists of metadata , styles etc<head>--->provides a metadata to the browser(information to the browser but doesn't display).<title>---> give the name to the webpage.<body>----> helps to display the content to the page.src is a attributes of iframehref is a attributes of alnkle tag ie <a...>iframe--> used to embed the another page in a current webpage.loading="lazy" --->loading the page late like youtube video loading a one page by page.alt---> to display the alternate text when the image is not rendered welltitle--->To pin the name  visible only when cursor on the top of image.colspan--> merge two table in a horizontal wise(--->).rowspan--> merge two table in a verticle wise.<link--> provide a link between external resource. There are 2 attributes rel(Based on relation that show where to locate)(rel="icon"---> for icon image that display the title tag image, rel="stylesheet" ----> that directed to the css or that belongs to the css),,  href(to locate a external resourse.<video----> control(provides the controlling environment to the video)autoplay, loop, muted, preloadself closing tag---> br, hr, img, link.Types of html tagspaired or container.empty or self.There are two scope:block scope--> the tag that acquire the complete width of  page row eg: p(paragraph), list, div.Inline scope--> acquire the width of block(only a content) of that content onlyeg: <a href>, bold, italic, a, imag, label, input, span<marque behavior="alternate"---> helps to bounce back or rebound back to right to left .There are 3 types of listsol-->ordered lists.2.ul---> unordered lists.  (types are: circle, square, disc)dl-->description lists. (types are: dt(terms), dd(description data))eg: dt and dd inside dl print like belowThursday, Breakfast is Uppi2Thursday, Breakfast is Uppi2<form>---> helps to read the user input data includes a user input and acts top send data to the server. <div>--> its a block scope act as a container for other element.A <span> element which is used to color a part of a textThe <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.semantic tags--> helps the screen reader. SEO(search engine optimizer ---> which helps to highlight the webpage). clearly defines its content.CONTENT LEARN IN HTML:1.html tags--> two container tags and empty tags2.blocked scoped and inline scoped.3.list--> ol,ul,dl4.table-->table,tr,td, attributes-border, rowspan, colspan.  (rowspan is used to merge rows vertically)   (colspan is used to merge columns horizontally)5.h1-to-h6, p, pre, b, i, u, marque, br, hr6.a--- href, target--self,blank,parent and top7.iframe---src, width, height, allowfullscreen,8.img-- src, w, h, alt, title9.audio,video---- src, h,w, autoplay, muted, control, loop, preload  10.<!doctypehtml> structure of html document11.attributes, elements, tags, div and span12. label(tags)--for13. input--- type, value, name, placeholder, readonly, required, hidden, id(represents the unique data)form--> Is used to collect the data from the user and send it to the server. makes a webpage dynamic (because it helps to collect the data from the user )value--> provide a default value (our own content) (helps to display the content comes from backend)Javascript---> invented in 1995 by brendon eich while Netscape --> He invented the js into 10 days with name mocha, then livescript and javascript.  Later in 1996---> Microsoft develop js---> called Jscript for their browser internet explorer. first version of ECCMa--> 1997ECMAScript(Manual or rule book states how js should works) called  ES1. Later in 1998 to 2005 js comes to works.2008--> google introduced a js to run smoothly and faster called  js engine v8( not a browser inside a browser engine helps to run js).2009--> node.js introduced2016--> New features was introduced in a js called ES-6 (ECCMa Script 6).2025 onwards---> ES16 ongoingJS is a Scripting language, object classes ----> A JS is a synchronous(executes the code line by line) , single threaded language(It executes one task at a time).whuy js?--> To make a webpage more creative and interative.Intergrating a HTML into JS using a Three ways:inlineInternalExternalconsole.log("")---> is a built in function used to build or display a message or statement in a developer console.Keywords in js used to declare a variable1.var---> redeclare any value and reasign multiple times with any values2.let3. constexample--> var refnameNetwork tab---> which helps to track the user API.typeof--> helps to define which type of data it holds.There are 7 types of primitive(stores value into memory) datatype(datatypes means type of value variable refers to)1.numbers2. bignit-->eg: 444444444444n (n is compulsory)3. null4.undefined5. symbol6.boolean7. stringThere are 3 types of Non-primitive typeArraysObjects--> stores data in key value pair (eg: name:"tarun", age:22,)3.Functiontypeof--> Checks what type of data it holds in a executionjs engine consists of---->Global  Execution contest (GEC)(Load the content to the call stack), Call stack(order of execution is managed by call stack) and heap memory.GEC----> consists of memory phase(load and assign a undefined) and code execution(assign a values to the undefined data to the exact(original) value.primitive data type---> stores a data in stack, and it is immutable(value cannot change)Non-primitive data type--->stores a data in a heap but reference stores in a stack and it is mutable.javascript code was run by ---> js engine-8hoisting--> Is a mechanism allocate a memory to a variable at memory phaselet billname=234;billname=456;(let is declare only once but assign again and again)let is hoisted but it is inside a temporal dead zone (TDZ) (TDZ contain all the variables with cannot initialized(undefined))(when it comes to the TDZ it occurs the error) (value of let is unavailable)var---> can be hoisted and get undefined(it is in memory phase)let---> can be hoisted but value are stored in a TDZ (once itis assigned as undefined it come out of TDZ)var---> redeclare, re-assign, hoisted--undefined (value-undefined)let---> cant redeclare, re-assign, hoisted--tdz (value-unavailable)const---> cant redeclare, cant re-assign, hoisted-tdz (value-unavailable)function---> IS also hoisted but doesn't give a undefined values.The function which call inside a another function--> call back functionThe function which accept that passing function (or) if it is returning the another function is also called---> higher order functionThe function doesn't have a method is called----> ananomous functionconcept come under js(till-20-04-2026)Keyword--var, let, constdatatype, typeofhoistingfunction-- call back function, higher order, annonomousarrow function---> ()=>   in this () is used to accept the argument and => body of the function  there is no use to add the return statementHigher ordre function--> map( helps to transform the array and iterate that internally transform the each array), filter and reduceArrow function --> arrow function can't be hoisted but the variable(ref) will be assigned is hoisted.SOME OF THE FEATURES PROVIDED BY BROWSER IS -->WEB API:1.setTimeout(function, millisecond(1000))---> Delay the time and 	call after provided millisecond2.console.log(); //or window.console.log();3. fetch()4. DOMALL these features can be accessed through the window object (window is a global object that helps to transfer the web api features to the browser js)web api--> provide a asynchronous behaviour to the js.we can't block a single thread in a jsevent loop--> check wheather the call stack is empty.call back queaue consisting of setTimerOut functionDOM (Document object model)---> Is a features of browser If you want to manipulate/change the html (webpage) using a js. DOM can be accessed using a global object ie windowDOM---> converts html representation into tress of object. ( each node act as a object) (why it is converting bcz js use this object to render the data) (DOM in general---> It is an object based model of the html structure)SOME OF DOM manipulating function1. getElementById();2. getElementsByClass();3. getElemetsByTagName();      SOME OF DOM properties are       1.tagName       2. innerText---read and set the content (render)       3. innerHtml---read and apply the our own contentDOM---> Converts html structure into object model (A tree like representation) (Object representation of html content) browser will actually creates a DOMEVENTS IN JS (Manipulate using a user action) (Events means action or occurance that happens in our browser so that js can handle that action)EVENTS OF FORMonSubmitonBlur-->triggers the events just visit the fieldonChange-->triggers the event when the data is changes12/03/2026Literals in java---> Reference is also called as LiteralsMethod overloading---> Method overloading two or more method but differ in parameter (parameter means either length of parameter or type of parameter)Keyword--->Keywords are built-in words which has specific program is defined (also called as metadata developers written the entire program to that keyword).*There are 50 + 3 (true, false, null)(these 3 only stores a literals/ref other stores a values in java.*Segregated into ---> 50= 48 + 2( goto, const  --> these two keywords are used in c/c++)(consisting of 48 keywords in java).Purpose of keyword---> Want to achieve the new concepts in java.Identifires in java----> Any name that defined in java is called as identifier (eg: classname, method name, variable name)There are 8000-10000 identifier in java available in jre/lib ---> rt.jar fileTwo type of identifier--> Built-in , Custom type identifier.Rules for using a identifier:	*Allowed Character: A-Z, a-z, 0-9, _ , $         *Cannot use special character to define identifier.They must start with a letter, $, or _They cannot start with numbersNumbers are allowed only after the first characterclass Sample{	int age=12;}-------->  Allowed identifiers of above example:  Sample123, $Sample, _Sample, Sam123ple.--------> Not allowed statement above example: 123Sample,class Sample{	System.out.println();}------> Not valid statement in java bcz SOP must written inside a block, constructor SOP is also a in-built identifier in java.class Student {      // Student → identifier (class name)    int age = 20;   // age → identifier (variable name)    void display()  // display → identifier (method name)    {        System.out.println(age);    }}Explanation (Simple)Student → Identifier but not a variable (it is a class name)display → Identifier but not a variable (it is a method name)age → Identifier and also a variableConclusion✔ age → variable name → identifier❌ Student, display → identifiers but not variablesSo this proves:All variable names are identifiers, but all identifiers are not variables.13/03/2026new keyword return type is \\\*\\\*reference\\\*\\\*.static---> belongs to class.instance--> belong to copies.Gun ref2= new Gun(78);System.out.println(ref2.gunId);System.out.println(ref2.gunName);OUTPUT: 78               nullref2=new Gun("AK 47");System.out.println(ref2.gunId);System.out.println(ref2.gunName);OUTPUT:0AK 47ref2=new Gun(78);System.out.println(ref2.gunId);OUTPUT:checks weather the old copies are there if there then it iss point to that copies (78)(pointing to first copies)14/03/2026*Enum---> Special type of java components in java that shows the limited components are used.Example:class Patient{String gender;   int age;    Day day;}class PatientExecutor{public static void main(String\\\[] args){Patient p = new Patient();p.gender="male";Day day = new Day(); //Create a new object for custom type p.day=day;               // Refers to the patient class so we 		write p.day=day;16/03/2026class Hotel{public Hotel(){Hotel hotel = new Hotel();System.out.println("Hotel cons is invoked");}}class HotelExecutor{public static void main(String\[] args){System.out.println("Main method called");Hotel hotel = new Hotel();}}In this hotel code creating a frame in stack like this:main------> println----->Pop println----> creating a object using a constructor--->called  Hotel----> inside Hotel another Hotel constructor is called----->STACK OVERFLOW happens.class Hotel{int hotelId;public Hotel(){this(1);}public Hotel(int hotelId){} this(1)---->which helps to invoke the same method in a same class with integer type is called as constructor chainingconstructor chaining---> Calling a constructor from another constructor.17/03/2026HTMLtarget---> target attributes specifies where that external reference are opened. consisting of 4 attributes_blank-----> The link will open to next page (new page)_top_parent_self---> The link will open in same tab.<a hraf>----> Provides a external link to the webpage (which helps to navigate to one page to another).18/03/2026constructor---> Hepls to initialize a object at the time of before object creation.Reference variable---> Helps to initialize the object after object creation.*copy(object) created during the run time managed by JVM.public Cellphone(){    cellphone cell = new Cellphone();}---> ERROR: Occur during the run time. Because copy creation happens during the runtime.  Stack Overflow happenspublic CellPhone(){        this();}---> ERROR: Occur during the compile time.  Because there is no object creation happens but calling one of the member of a class.---> Recursive constructor allocation.23/03/2023public static class Speaker---> ERROR: modifier static is not allowed hereAdvantage of Inheritence:*Changes will directly reflected to the child class using a extends keyword.*Code Reusability.When do we use Inheritence?--->When two classes a share same common features(methods)/function(properties)  then we use inheritanceInheritence means  A process of acquiring the method and properties of one class to another class.Inheritence is also called IS-A relationship by achieved using a extends keyword.child/derived/subclass--->Child classparent/super/base---> Parent classIn java every class will have a super class (means it points to the parent class in javaEvery class will have a immediate extends/parent/by default that is Object--> Eg: class Speaker extends Objectclass SpeakerChild extends Object but  by intentionally we gaveclass SpeakerChild extends SpeakerThere are two types of inheritance:Implicit inheritence---> Eg class CurrentAccount (extends object is given by default)Explicit inheritence--> Eg class CurrentAccount extends BankAccount (Types of Explicit inheritance---> Multilevel , Higherarcial , Hybrid).In java every class by default extends i.e Object called as Implicit (internal inheritance) (also called as supermost or parent class in java)There are two types of chaining:this() chaining---> comes under constructor shows the relationship between one constructor to anothersuper() chaining---> comes under Inheritence shows relationship between one child class constructor to another parent class constructor.eg: Every constructor have super() class by defaultBankAccout{super();SOP();}eg: Every class have Immediate extends class that is Objectclass BankAccount extends Object{}25-03-2026String[] vegetables = new String[3]  ---> In this declaration setting the array size and data comes during the runtime.30/-2-2026private keyword is used for encapsulation in java.03/04/2026BufferReader is used to take input from the user instead of scannerEncapsualtion--->Is the phenomenon/process in which grouping the data(methods) into a single block or unit.RULES OF ENCAPSULATION:The class that you define that must be public in accesses.Encapsulation is achieved in private data members/fields/states/variables.It should have public constructor.public setter and getter method.comes under Abstruction class (optional) (using implements).---->Accessors(getter) and mutators(setter)06/04/2026this--> this keyword is used only for non-static content not for static content.  new--> also considered as operator.14/04/2026com.xworkz.bakery---> represents type of project, name of organization and name of the application.(called as standard package in java)pakages(Just a folder)---> helps to organize a file in a structured manner.(increase the redability of a code)import com.xworkz.healthcare.doctor.Doctor---> fully packaged file structure.BuiltIn packages are fixed eg: import java.util.Scanner;15/04/2026Package name + class name--> called as full specified class.16-04-2026String chats[]={"panipuri", "bel puri"}------>when we already know what type content and how much to addString chats[]=new String[3]---> when we dont know which charts to add bur we know how much to add.(Data never been predicted)  (Data comes during a run time)  (we can access the only one variable from array that is charts.length)17/04/2026Enum---> Is a special type of  java class that is used to create a constants in java file (Enum is used only when the class consisting of limited data) (Enum is used to define a group of constant)constant---> Are declared in a Upprecase only eg: LEAVES,we does not create object to the enum-----> It internally consists of static data (like LEAVES, BIRTHDAY, FESTIVAL).final keyword----> we can't inherit the other class (it can't be re-initialized ) (eg: private static final String LEAVES---> This is the syntax where Enum internally defined) (Another way of defining a constant injava rather than Enum keyword)//Convert enum to StringString ref= EnumName.LEAVES.toString();SOP(ref)//Convert String  to EnumEventType eventtype=EventType.valueOf("LEAVES");HAS-A relationship---> consisting of 4 relationships1. one-to-one (unidirectional)2.one-to-many (unidirectional)3.many-to-one (bidirectional)4. many-to-many (bidirectional)If two classes don't relate with each other if you want to relate then we use-->HAS-A relationship.(eg: Hospital-Doctor)If two classes shares the same common properties and behaviour then we use-----> IS-A relationship(inheritance)private data can never be shared to the childeg: class Speaker{private int price;}class Speakerchild extends  Speaker{}1.Will static data shared to the child or not?Ans:   Yes,  There is  no necessary to create a child object we can called using a Syntax    eg(ChildName.createAccount())Example:class Parent {static int x = 10;}public class Child extends Parent {}public class Test {public static void main(String[] args) {Child.x = 20;System.out.println(Child.x);    //o/p:20System.out.println(Parent.x);  //o/p: 10}}2.WHAT SHOULD I WRITE ALL THE INHERITED CLASSES IN A ONE FILE AND MAKE ALL THE FILE AS PUBLIC??Answer:One file → One public classFile name = Public class nameOther classes → non-publicExample:class Parent {static int x = 10;}	class Child extends Parent {			}		public class Test {    		public static void main(String[] args) {       			 Child.x = 20;			System.out.println(Child.x);        		System.out.println(Parent.x);    		}	}            File name saved as Test.java ( There is only one public class in a file)WHAT CONTENT TO BE SHARED FROM PARENT TO CHILD1.final data--> but can't modified2.public, static dataIn generalMethod overriding means in general (using a anotation @Override)------->When you want to continue the same methods/properties from the parent but not want to implement itexample:class parent{public void toBusiness(){SOP("Medical business");}class Child extends parent(){@Override  //Not compulsory but child want to fight with parent to change his/her business but they want business (To implement the child data)public void  toBusiness(){SOP("Tea business");}}main(){Child child= new Parent();  //Syntax error can't create a object using a child classchild.toBusiness();Parent parent= new Child(); //called Polymorphism bcz from parent we can create a child objectparent.toBusiness();Polymorphism---> An object behave differentially at a give instance of time called as Polymorphism.When polymorphism is achieved then only Method override is achievedTo achieve a Method override :1.Inheritance Must be done2.The signature of Method should be same in both parent and child3.In method override ---> Method name, Method parameter, Method returntype all are same from parent to child ) but implementation (in child)is differentTwo Type Polymorphism:compile-time polymorphism---> Method overloading(compile-time polymorphism achieved with the help of Method overloading).run-time polymorphism----> Method override( run-time polymorphim achieved with the help of Method overriding same method signature butdifferent implementation).THERE IS TWO TYPE  OF OUTPUT TITLY AND LOOSLY COUPLONGThe output of polymorphism to achieve a loosly coupled is good (bcz it has to works on all the senarios) (one functionality works with all the type of data) (All this scenarios build during a run-time polymorphism)whenever change in the implementation will not affect the user--> LOOSLY COUPLED.whenever change in the implementation will affect the user ---> TITLY COUPLTEDTwo important concept in Abstract------> Interface and Abstract classsuper() constructor is a default constructor in any constructor.Parent = Basic features  (Basic information)Child = Basic + Extra features (Takes information + Adds extra information)TWO TYPE OF CASTING IN JAVAPrimitive casting--> implicit(widening) , explicit(narrowing).Object reference--> implicit(upcasting), explicit(downcasting).ACCESS SPECIFIER PRIORITYpublicprotected3.defaultprivateprivate method can't override any (child class) method.Default method not accessible outside a class (accessible within the same package)protected method can be accessed within the package or outside package/class and it is within inside the (subclass) only and not outside the subclass also and not a executor file also.(ONLY COMES UNDER INHERITANCE).  It can be accessed by creating a public access specifier and pass a protected method inside a public access specifier then call on the executor file easily.private method accessed within the same class only!!if we want to type cast the value the casting datatypes must be lower value then the provided data values.example:  int to shortpolymorphism---> perform loose coupling--->  that says change in implementation that do not affect the users.HWHOW STATIC MEMBER IS SHARED TO THEIR CHILD?diff this keyword and this methoddiff super method and super keywordif a parent class doesn't contain any default  constructor then non of their extends doesn't contain any constructor.if a child and parent having a same variable name that can be separated by using a super keywordBOXINGeg: Integer num1= new Integer (100);  // converting primitive to object referenceint a=10;Integer num2=a;   //auto-boxing   ( converting object reference to primitive)local variable--> scope upto method execution only (stored inside a stack )class--->1. variable/states ----> 1. class level------> instance, static-----> 2. method level----> local, parameter      --->2. methods/behavoiur ----->static, instanceHW DIFF BETWEEN PARENT AND CHILD CALSS METHOS USING INHERITANCETHERE ARE 5 TYPES OF IMPORT STATEMENTstandard ---> before class declaration (import packageName. Classname)2.Inline import ----> inside class (packageName.ClassName.ref)3.static import ---> static importmagic import (java.lang)5.wildcard import---> import java.util.*;   ---> here * is wildcard (it calls every files at a time)import (two high level imports)---> 1. implicit --->standard, Inline, static, majic, wildcard2.Explicit----> majic,  wildcardOBJECT CLASS (Supermost class) consists of 11 Methods which is given for all its subclassesint hashCode();String toString();boolean equals();Class getClass();     wait();      wait(int);       wait(long, int);      notify();	notifyAll();    finalize();Object clone() ---> clone means copywhenever we call  or try to use a any object reference then internal calling of toString() happens belongs to object classeg Event event = new Event();SOP(event);  //internal calling of toString() happensString representation is output of toString().equals and == are both are same in object reference (it compares reference).equals and == in String method (it compares values)WHERE CONNECTION HAPPENS FRONTEND TO BACKENDWHERE BACKEND CONNECTION HAPPENS (form action)6-05-2026Abstract method--- abstract method are those method which does not contains body  eg:  kyc();constrast method--> constract method are those which contains bodyex:  kyc(){}interface defines rules (Is a special type of java method used to define rules) (we can't create a object to the interface like Commercialspace commspace= new Commecialspace not possible) (interface doesn't have any body)Abstract consisting of ---> interface which implements using a ClassAbstraction occurs by the creating a interface class(rules) and creating a object in a implementation class (Logic build here)interface class inside a methods  are always public in defaultinterface are always act as a media/bridge between user, and the deviceinterface consisting of abstract method where does not consisting of body where user/admin does not know what type of implementation to done.Using a Abstract keyword we use to create a body to a method or doesn't create a body                      but not in interface keyword in interface we create  a abstract method only (body less method).Change in implementation but doesn't affect the user (loosly coupling)--> is the output of Abstraction (loose coupling is achieved with the help of interface)Abstraction-----> Hiding the implementation allows the user to access only the functionality with the help of interface is know as abstraction.interface---> is also a class--> a special type of class--> provide contract between the two entities (user to ATM).   In Java, an interface acts as a strict contract of behaviors. It defines what a class should do, but leaves the details of how to do it to the classes that implement it.interface--> Yen madbeku antha helutthe in simpleHW//// exam (3 methods ), banking-app(transfer method loose coupling)1-6-2026There are 3 types interface in javaCustom/UserDefined interfacebuilt-In Type interface (eg: stack, queue)marker interfaceIn abstract class ------ create abstract method & concrete method.In interface-------- consisting of public by default and we  create abstract method whereas java 8 features provides a concrete method by default, staticInterface purpose is just to provide a rules or just a constract between the user and the device.We cannot create a constructor in interface hence object creation is not possible in interface.We can create a constructor for abstract class but we cannot create a instance so we can invoke this only through its impl(subclass)  class only.In interface by default contains public static final so once we declare a variable like int age then we need to initialize int age=90;We cannot create a block in interface that is {}(open and close braket)IMPORTANT INTERVIEW QUESTIONcan a class inherit (extends) multiple classes----> No, bcz one class inherit the one parent class only.can a class inherit (extends) only single class----> Yescan a class implements the multiple interface---> Yescan a interface inherit another interface---> Yes , example class interface Bank implements CurrentAccount(),,, class interface CurrentAccount implements Bank()can an interface inherit the class---> Nocan an interface inherit mutiple interfaces---> Yescan an interface implements interface---> Nocan an class implements interface and inherit class---> Nocan a class inherit class and implemets interface---> Yescan a write a constructor in interface---> Nocan a write a constructor in abstract class---> Yescan a write a over-loaded constructor in abstract class--> Yescan i over-load a constructor---> Yescan i over-ride a constructor--> NoToday--> PatientManagerSystem(Using lombok),  RajGobi(Extends the partial method from interface)HW---> Hospital, library, EcommerceLombok--> Is API, Java Library used to write a boiler plate code in a encapsulated class.DESIGN PATTERN IN JAVAprivate static SingleTon s= new SingleTon();   //eager  initializationprivate static SingleTon s= null;    //lazy initializationALL THE EXECPTION ARE THROWABLE (Arithmetic Execption, Stack Overflow error, NullPointer Execption)Exception--> Unexpected/Unwanted events which will cause the execution of the program. (In java exception is also an object in runtime but it also a class).Exception is handles using a keyword---> try, catchapache POI---> Is an API which helps to get the data from the excel file.TWO TYPES EXCEPTIONRuntime exception---> unchecked exception.Compile exception----> checked exception (need to be handled before compilation of the code)--> eg: IOException, FileNotFound, ClassNotFound, SqiExceptionBOTH WILL OCCUR IN A RUNTIME AND HANDLED BY TRY AND CATCH BLOCK.Any exception class that extends the Exception/throwable---> checked exceptionAny exception class that extends the RuntimeException---> Unchecked exceptionHWOTP sending through the email (Java mail),  Project conversion from python to java,   forgot password send a link to the admin email which will link directly to the change password page. Resume update, Portfoil update, Exception hierarchy analysis.WHAT WILL HAPPENS WHEN EXCEPTION OCCURSproblem occurs---> jvm creates a instance of an exception type---> jvm throws the exception object type---->user handle the exception (if not  program will terminate abnormally)Exception is handled by jvm (exception will throw by jvm)thows keyword--> is only indicates that  from which method exception occurs (Avoiding the synarios) (used to propogating/spreading the exception is also called stack winding)THERE ARE TWO TYPE OF HANDLER1.default handler---> main will propogate the exception to the default handler then the default handler will terminate the program.2. catch handlerHWoops---> HASA relationship, castingThere are two ways to get the reference of the classUsing new KeywordUsing Class.forName(class name)---> forName is a static method, forName which helps to load the class name to the jvmthrow refname & throws exceptionName ---> are used in both checked and unchecked exception.finally---> Is used to close the costly resource (eg: Scanner)IN INTELIJI WE CAN PUSH THE PROJECT TO THE GITHUB USING A TERMINALgit initgit remote add origin git-hub-url--->git remote -v ----> shows both url as same for fetch and push3.git checkout -b "new branch name"git add .git statusgit commit -m "Inital commit"git push origin new branch name
+JAVAC build a byte code (creation of byte code)
+
+
+source code--(javac)> byte code(.class)____> JVM-------> IBM
+ 											AMD
+ 											INTEL
+
+
+JVM Install on top of processor (comes under jdk)
+
+company pays a money for recuirement for performing a CRUD operation.
+
+
+%JAVA_HOME%\bin ----> set the java home pickedup dynamically so using a % symbol
+
+=  is also called as initialize operator
+
+local, static, parameter, instance (4 types of variable)
+
+
+for int=0, char=space, string=null ---> default value show in terminal when doesn't declare a value
+
+
+Two types of Data Types
+primitive: byte, int, float, char, long, double, short,boolean
+**object reference/non-primitive(**Every name should start with uppercase eg:Array) : Array, String, class, interface, custom class name
+
+
+char  must initialize with a one value more than one value it converts in ASCII value
+eg: char ch= 'M' + '0' ---> 77+48--- 125 (output= })
+
+
+
+static int gender='M' ----> integer takes ASCII value of M (and its compile and run)
+
+variable: Registered area allocated on the memory location.
+DataType: Type of value to be stored on the reference.
+
+stack stores : current line info, return type,  reference name
+constant pool stores the reference values
+
+
+//git bash commands
+ git clone https://github.com/kaifmr77/Xworkz_arrays_java.git
+  ls
+   cd Xworkz_arrays_java
+   git status
+   git add .
+   git status
+   git commit -m "array files added"
+   git push origin main
+
+
+changing a branch in git bash  (main) branch to new array, variable branch
+git checkout -b variableAndDatatyes
+git add .
+git commit -m "Initial commit"
+git push origin variableAndDatatyes
+moving to the old branch ---> git checkout main
+
+Array: collection of refernce of same/similar type
+use of array is: store multi reference in a single refName
+Declaration and initialization:
+     Datatype ref[]={ref1, ref2,ref3};
+eg: String[] teaNames[]={"green chaa", "almond chaa"};
+Method: Group of java statement which is used to perform the operation on reference.
+Variables is also called as: Property/field/state/ref.
+Uses of Method:
+1.Reduce the code redundancy (reduce the repetitive code).
+
+JVM is one of the important component of java which is used to perform the 3 types of task.
+
+JVM (consisting of 3 subcomponent)---> 1.class loader(loading the class), 2. byte code verifier( verify the whether the byte code is security violated) 3. Interpreter(read the byte stream line-by-line help to execute the content on console)
+byte code is the only thing which are platform independent.
+os+processor ----> called as platform
+1.compile time is a combination of source code and byte code (compile time contains java compiler (managed by JDK)).
+
+2. run time contains JVM (managed by JRE. JRE which helps to provide a set of libraries)
+
+JVM FEATURES:
+*JVM provide a execution enviornment.
+ 	*JVM loads the byte code (class loader).
+ 	*JVM verifies the loaded byte code(byte code verifier).
+ 	*JVM read byte code data continuous data (stream) line-by-line.
+
+***JRE=JVM+set of libraries.
+***JRE physically exists when we got installed. Whereas JVM is not physically available.
+*JRE is used to execute the java code.
+*JRE is minimum required for the execution of java code.
+
+25/02/2026
+JRE only run the code JVM which helps to create a run time environment (JVM is a part of JRE).
+JDK is considered as a fully featured developed software kit.
+JDK= JRE+development tools(compiler)
+
+JVM= provide run time environment.
+JRE= Execute the java code(byte code).
+JDK= Do development.
+Development tools are managed by JRE+JDK
+Development tools consisting of compiler, debugger, java docs etc.(all this development tool are available in bin folder)
+Compile time managed by JDK.
+Run time managed by JRE (Means JVM managed by JRE).
+**JDK & JRE-----> PHYSICALLY AVAILABLE.
+JVM----> NOT PHYSICALLY AVAILABLE.
+
+constructor is defined as special type of method in java.
+constructor is invoked only when using a new keyword.
+javap----> convert .class to byte code.
+
+class in java is considered as blueprint, design, template
+A class consisting of states(ref) and behaviour(method).
+object---> Multiple copies(instance) of a particular class.
+
+new keyword which help to getting a reference variables eg. (Bill bill--> ref)
+constructor syntax:
+        CustomdataType( Classname) referenceVariable= new Constructor();
+**static data---->**shared the same data among different copies(objects).
+parameterized and local variables---> does not have a default values.
+Non-static have a default values.
+one copy of a class---> static
+more than one copy of a class--->non-static
+
+10/03/2026
+main--> method is stored in a stack(in a frame).
+Metaspace--> stores a static and instance data.
+byte code---> platform independent.
+JVM, JRE, JDK---> platform dependent.
+JVM---> Always written in c/c++.
+
+1️⃣ Platform Dependent
+Platform dependent means the program depends on the operating system (Windows, Linux, Mac).
+Example languages: C, C++
+If you compile C code on Windows, the .exe file runs only on Windows, not on Linux.
+So we say:
+Platform dependent = Runs only on a specific OS
+
+2️⃣ Platform Independent
+Platform independent means the program can run on any operating system without changing the code.
+Java follows:
+Write Once, Run Anywhere (WORA)
+You write the program once, and it runs on Windows, Linux, Mac.
+
+3️⃣ How Java becomes Platform Independent
+Java works in two steps.
+Step 1: Java Compiler
+.java file  →  javac  →  .class file
+The .class file is Bytecode.
+This bytecode is platform independent.
+That means the same .class file can run on any OS.
+
+
+Example:
+Gun ref = new Gun();---> The original data is stored in a Metaspace and its copy Gun ref1=new Gun(); it is stored instance memory.
+
+* In static content we updating the original content again and again (bcz it has a one copy)(Applicable to the one user only).
+*In instance content creating a copies of the same class and assigning the value to the each individual(limited to one object).
+
+1.When do you want to create a object in java?
+Ans: whenever to create a multiple copies of data(same class).
+
+
+Creating a object by using a default constructor then it creates a seperate instance memory and initialized a default value to it( eg initial value: int=0, boolean =false(provided by JVM using constructor)---> Next it initialize a original reference values by calling a -->eg: ref.gunId=70;
+
+
+Constructor is invoked using a new keyword.
+If Default constructor it initialize a value to the instance variables.
+this keyword----> help to differentiate between the instance and parameter(local variable)(or same) --> invoke (initialize) a instance member of a instance class.
+
+
+
+TWO TYPES OF OVERLOADING
+Method overloading--> static, instance
+Construcrtor overloading
+Once we declare a parameterized constructor in a class the default construtor is vanished.
+
+
+Execution Order of java program(code)
+1️⃣ Class loads
+2️⃣ Static block executes
+3️⃣ main() method starts
+4️⃣ Constructor executes (when object is created)
+
+11/03.2026
+HTML---> HTML means used to build the webpage
+Markup---->Means uses a tags to design a structure of webpage.
+HTML Developed by Tim berners Lee.
+**Tags--->**Tags are the components(instruction) to built the webpage or display the content.
+**<>--->**Why this tags are used---> because brower will understand the content which comes under inside this brakets.
+HTML is a Case-insentives  eg: <HTML > same as <html>
+
+Elements---> Combination of opening tag<> + content + closing tag</>  eg: <body> Tarun </body>.
+👉 HTML attributes are used to provide additional information about HTML elements and are specified inside the opening tag in name-value pairs.
+
+
+<!DOCTYPE html>----> This is a declaration (not a tag) html means the current version of file.
+<html>---> root(container) element of a HTML document consists of metadata , styles etc
+<head>--->provides a metadata to the browser(information to the browser but doesn't display).
+<title>---> give the name to the webpage.
+<body>----> helps to display the content to the page.
+src is a attributes of iframe
+href is a attributes of alnkle tag ie <a...>
+iframe--> used to embed the another page in a current webpage.
+loading="lazy" --->loading the page late like youtube video loading a one page by page.
+alt---> to display the alternate text when the image is not rendered well
+title--->To pin the name  visible only when cursor on the top of image.
+colspan--> merge two table in a horizontal wise(--->).
+rowspan--> merge two table in a verticle wise.
+<link--> provide a link between external resource. There are 2 attributes rel(Based on relation that show where to locate)(rel="icon"---> for icon image that display the title tag image, rel="stylesheet" ----> that directed to the css or that belongs to the css),,  href(to locate a external resourse.
+<video----> control(provides the controlling environment to the video)
+autoplay, loop, muted, preload
+self closing tag---> br, hr, img, link.
+Types of html tags
+paired or container.
+empty or self.
+There are two scope:
+block scope--> the tag that acquire the complete width of  page row eg: p(paragraph), list, div.
+Inline scope--> acquire the width of block(only a content) of that content only
+eg: <a href>, bold, italic, a, imag, label, input, span
+
+<marque behavior="alternate"---> helps to bounce back or rebound back to right to left .
+There are 3 types of lists
+ol-->ordered lists.
+2.ul---> unordered lists.  (types are: circle, square, disc)
+dl-->description lists. (types are: dt(terms), dd(description data))
+eg: dt and dd inside dl print like below
+Thursday, Breakfast is Uppi2
+Thursday, Breakfast is Uppi2
+<form>---> helps to read the user input data includes a user input and acts top send data to the server.
+ <div>--> its a block scope act as a container for other element.
+A <span> element which is used to color a part of a text
+The <span> tag is much like the <div> element, but <div> is a block-level element and <span> is an inline element.
+semantic tags--> helps the screen reader. SEO(search engine optimizer ---> which helps to highlight the webpage). clearly defines its content.
+CONTENT LEARN IN HTML:
+1.html tags--> two container tags and empty tags
+2.blocked scoped and inline scoped.
+3.list--> ol,ul,dl
+4.table-->table,tr,td, attributes-border, rowspan, colspan.  (rowspan is used to merge rows vertically)   (colspan is used to merge columns horizontally)
+5.h1-to-h6, p, pre, b, i, u, marque, br, hr
+6.a--- href, target--self,blank,parent and top
+7.iframe---src, width, height, allowfullscreen,
+8.img-- src, w, h, alt, title
+9.audio,video---- src, h,w, autoplay, muted, control, loop, preload  
+10.<!doctypehtml> structure of html document
+11.attributes, elements, tags, div and span
+12. label(tags)--for
+13. input--- type, value, name, placeholder, readonly, required, hidden, id(represents the unique data)
+
+form--> Is used to collect the data from the user and send it to the server. makes a webpage dynamic (because it helps to collect the data from the user )
+value--> provide a default value (our own content) (helps to display the content comes from backend)
+Javascript---> invented in 1995 by brendon eich while Netscape --> He invented the js into 10 days with name mocha, then livescript and javascript.  Later in 1996---> Microsoft develop js---> called Jscript for their browser internet explorer. first version of ECCMa--> 1997
+ECMAScript(Manual or rule book states how js should works) called  ES1. Later in 1998 to 2005 js comes to works.
+2008--> google introduced a js to run smoothly and faster called  js engine v8( not a browser inside a browser engine helps to run js).
+2009--> node.js introduced
+2016--> New features was introduced in a js called ES-6 (ECCMa Script 6).
+2025 onwards---> ES16 ongoing
+JS is a Scripting language, object classes ----> A JS is a synchronous(executes the code line by line) , single threaded language(It executes one task at a time).
+whuy js?
+--> To make a webpage more creative and interative.
+Intergrating a HTML into JS using a Three ways:
+inline
+Internal
+External
+console.log("")---> is a built in function used to build or display a message or statement in a developer console.
+Keywords in js used to declare a variable
+1.var---> redeclare any value and reasign multiple times with any values
+2.let
+3. const
+example--> var refname
+Network tab---> which helps to track the user API.
+typeof--> helps to define which type of data it holds.
+There are 7 types of primitive(stores value into memory) datatype(datatypes means type of value variable refers to)
+1.numbers
+2. bignit-->eg: 444444444444n (n is compulsory)
+3. null
+4.undefined
+5. symbol
+6.boolean
+7. string
+There are 3 types of Non-primitive type
+Arrays
+Objects--> stores data in key value pair (eg: name:"tarun", age:22,)
+3.Function
+typeof--> Checks what type of data it holds in a execution
+js engine consists of---->Global  Execution contest (GEC)(Load the content to the call stack), Call stack(order of execution is managed by call stack) and heap memory.
+GEC----> consists of memory phase(load and assign a undefined) and code execution(assign a values to the undefined data to the exact(original) value.
+primitive data type---> stores a data in stack, and it is immutable(value cannot change)
+Non-primitive data type--->stores a data in a heap but reference stores in a stack and it is mutable.
+javascript code was run by ---> js engine-8
+hoisting--> Is a mechanism allocate a memory to a variable at memory phase
+let billname=234;
+billname=456;
+(let is declare only once but assign again and again)
+let is hoisted but it is inside a temporal dead zone (TDZ) (TDZ contain all the variables with cannot initialized(undefined))(when it comes to the TDZ it occurs the error) (value of let is unavailable)
+var---> can be hoisted and get undefined(it is in memory phase)
+let---> can be hoisted but value are stored in a TDZ (once itis assigned as undefined it come out of TDZ)
+
+var---> redeclare, re-assign, hoisted--undefined (value-undefined)
+let---> cant redeclare, re-assign, hoisted--tdz (value-unavailable)
+const---> cant redeclare, cant re-assign, hoisted-tdz (value-unavailable)
+function---> IS also hoisted but doesn't give a undefined values.
+The function which call inside a another function--> call back function
+The function which accept that passing function (or) if it is returning the another function is also called---> higher order function
+The function doesn't have a method is called----> ananomous function
+concept come under js(till-20-04-2026)
+Keyword--var, let, const
+datatype, typeof
+hoisting
+function-- call back function, higher order, annonomous
+arrow function---> ()=>   in this () is used to accept the argument and => body of the function  there is no use to add the return statement
+Higher ordre function--> map( helps to transform the array and iterate that internally transform the each array), filter and reduce
+Arrow function --> arrow function can't be hoisted but the variable(ref) will be assigned is hoisted.
+SOME OF THE FEATURES PROVIDED BY BROWSER IS -->WEB API:
+1.setTimeout(function, millisecond(1000))---> Delay the time and 	call after provided millisecond
+2.console.log(); //or window.console.log();
+3. fetch()
+4. DOM
+ALL these features can be accessed through the window object (window is a global object that helps to transfer the web api features to the browser js)
+web api--> provide a asynchronous behaviour to the js.
+we can't block a single thread in a js
+event loop--> check wheather the call stack is empty.
+call back queaue consisting of setTimerOut function
+DOM (Document object model)---> Is a features of browser If you want to manipulate/change the html (webpage) using a js. DOM can be accessed using a global object ie window
+DOM---> converts html representation into tress of object. ( each node act as a object) (why it is converting bcz js use this object to render the data) (DOM in general---> It is an object based model of the html structure)
+SOME OF DOM manipulating function
+1. getElementById();
+2. getElementsByClass();
+3. getElemetsByTagName();
+      SOME OF DOM properties are
+       1.tagName
+       2. innerText---read and set the content (render)
+       3. innerHtml---read and apply the our own content
+
+
+
+DOM---> Converts html structure into object model (A tree like representation) (Object representation of html content) browser will actually creates a DOM
+EVENTS IN JS (Manipulate using a user action) (Events means action or occurance that happens in our browser so that js can handle that action)
+EVENTS OF FORM
+onSubmit
+onBlur-->triggers the events just visit the field
+onChange-->triggers the event when the data is changes
+
+
+12/03/2026
+Literals in java---> Reference is also called as Literals
+Method overloading---> Method overloading two or more method but differ in parameter (parameter means either length of parameter or type of parameter)
+Keyword--->Keywords are built-in words which has specific program is defined (also called as metadata developers written the entire program to that keyword).
+*There are 50 + 3 (true, false, null)(these 3 only stores a literals/ref other stores a values in java.
+*Segregated into ---> 50= 48 + 2( goto, const  --> these two keywords are used in c/c++)(consisting of 48 keywords in java).
+Purpose of keyword---> Want to achieve the new concepts in java.
+
+Identifires in java----> Any name that defined in java is called as identifier (eg: classname, method name, variable name)
+There are 8000-10000 identifier in java available in jre/lib ---> rt.jar file
+Two type of identifier--> Built-in , Custom type identifier.
+
+Rules for using a identifier:
+	*Allowed Character: A-Z, a-z, 0-9, _ , $
+         *Cannot use special character to define identifier.
+They must start with a letter, $, or _
+They cannot start with numbers
+Numbers are allowed only after the first character
+
+class Sample{
+	int age=12;
+}
+-------->  Allowed identifiers of above example:  Sample123, $Sample, _Sample, Sam123ple.
+--------> Not allowed statement above example: 123Sample,
+
+class Sample{
+	System.out.println();
+
+}
+------> Not valid statement in java bcz SOP must written inside a block, constructor SOP is also a in-built identifier in java.
+
+class Student {      // Student → identifier (class name)
+    int age = 20;   // age → identifier (variable name)
+    void display()  // display → identifier (method name)
+    {
+        System.out.println(age);
+    }
+}
+Explanation (Simple)
+Student → Identifier but not a variable (it is a class name)
+display → Identifier but not a variable (it is a method name)
+age → Identifier and also a variable
+
+Conclusion
+✔ age → variable name → identifier
+❌ Student, display → identifiers but not variables
+
+So this proves:
+All variable names are identifiers, but all identifiers are not variables.
+
+
+
+13/03/2026
+new keyword return type is \\\*\\\*reference\\\*\\\*.
+static---> belongs to class.
+instance--> belong to copies.
+
+
+Gun ref2= new Gun(78);
+System.out.println(ref2.gunId);
+System.out.println(ref2.gunName);
+
+OUTPUT: 78
+               null
+
+ref2=new Gun("AK 47");
+System.out.println(ref2.gunId);
+System.out.println(ref2.gunName);
+
+OUTPUT:
+0
+AK 47
+
+ref2=new Gun(78);
+System.out.println(ref2.gunId);
+
+OUTPUT:
+checks weather the old copies are there if there then it iss point to that copies (78)(pointing to first copies)
+
+
+
+
+14/03/2026
+*Enum---> Special type of java components in java that shows the limited components are used.
+Example:
+class Patient{
+String gender;
+   int age;
+    Day day;
+}
+
+
+class PatientExecutor{
+public static void main(String\\\[] args){
+Patient p = new Patient();
+p.gender="male";
+
+Day day = new Day(); //Create a new object for custom type
+ p.day=day;               // Refers to the patient class so we 		write p.day=day;
+
+
+
+16/03/2026
+class Hotel{
+public Hotel(){
+Hotel hotel = new Hotel();
+System.out.println("Hotel cons is invoked");
+}
+}
+
+class HotelExecutor{
+public static void main(String\[] args){
+System.out.println("Main method called");
+Hotel hotel = new Hotel();
+}
+}
+
+In this hotel code creating a frame in stack like this:
+main------> println----->Pop println----> creating a object using a constructor--->called  Hotel----> inside Hotel another Hotel constructor is called----->STACK OVERFLOW happens.
+
+
+class Hotel{
+int hotelId;
+public Hotel(){
+this(1);
+
+}
+
+public Hotel(int hotelId){
+
+}
+
+ this(1)---->which helps to invoke the same method in a same class with integer type is called as constructor chaining
+
+constructor chaining---> Calling a constructor from another constructor.
+
+
+17/03/2026
+HTML
+target---> target attributes specifies where that external reference are opened. consisting of 4 attributes
+_blank-----> The link will open to next page (new page)
+_top
+_parent
+_self---> The link will open in same tab.
+<a hraf>----> Provides a external link to the webpage (which helps to navigate to one page to another).
+
+
+18/03/2026
+constructor---> Hepls to initialize a object at the time of before object creation.
+Reference variable---> Helps to initialize the object after object creation.
+*copy(object) created during the run time managed by JVM.
+
+public Cellphone(){
+    cellphone cell = new Cellphone();
+}
+---> ERROR: Occur during the run time. Because copy creation happens during the runtime.  Stack Overflow happens
+
+
+public CellPhone(){
+        this();
+}
+---> ERROR: Occur during the compile time.  Because there is no object creation happens but calling one of the member of a class.
+---> Recursive constructor allocation.
+
+
+23/03/2023
+public static class Speaker---> ERROR: modifier static is not allowed here
+Advantage of Inheritence:
+*Changes will directly reflected to the child class using a extends keyword.
+*Code Reusability.
+When do we use Inheritence?
+--->When two classes a share same common features(methods)/function(properties)  then we use inheritance
+Inheritence means  A process of acquiring the method and properties of one class to another class.
+Inheritence is also called IS-A relationship by achieved using a extends keyword.
+child/derived/subclass--->Child class
+parent/super/base---> Parent class
+
+In java every class will have a super class (means it points to the parent class in java
+Every class will have a immediate extends/parent/by default that is Object
+--> Eg: class Speaker extends Object
+class SpeakerChild extends Object but  by intentionally we gave
+class SpeakerChild extends Speaker
+
+There are two types of inheritance:
+Implicit inheritence---> Eg class CurrentAccount (extends object is given by default)
+Explicit inheritence--> Eg class CurrentAccount extends BankAccount (Types of Explicit inheritance---> Multilevel , Higherarcial , Hybrid).
+In java every class by default extends i.e Object called as Implicit (internal inheritance) (also called as supermost or parent class in java)
+
+There are two types of chaining:
+this() chaining---> comes under constructor shows the relationship between one constructor to another
+super() chaining---> comes under Inheritence shows relationship between one child class constructor to another parent class constructor.
+
+eg: Every constructor have super() class by default
+BankAccout{
+super();
+SOP();
+}
+eg: Every class have Immediate extends class that is Object
+class BankAccount extends Object{
+}
+
+25-03-2026
+String[] vegetables = new String[3]  ---> In this declaration setting the array size and data comes during the runtime.
+
+30/-2-2026
+private keyword is used for encapsulation in java.
+03/04/2026
+BufferReader is used to take input from the user instead of scanner
+Encapsualtion--->Is the phenomenon/process in which grouping the data(methods) into a single block or unit.
+RULES OF ENCAPSULATION:
+The class that you define that must be public in accesses.
+Encapsulation is achieved in private data members/fields/states/variables.
+It should have public constructor.
+public setter and getter method.
+comes under Abstruction class (optional) (using implements).
+---->Accessors(getter) and mutators(setter)
+06/04/2026
+this--> this keyword is used only for non-static content not for static content.  
+new--> also considered as operator.
+
+14/04/2026
+com.xworkz.bakery---> represents type of project, name of organization and name of the application.(called as standard package in java)
+pakages(Just a folder)---> helps to organize a file in a structured manner.(increase the redability of a code)
+import com.xworkz.healthcare.doctor.Doctor---> fully packaged file structure.
+BuiltIn packages are fixed eg: import java.util.Scanner;
+15/04/2026
+Package name + class name--> called as full specified class.
+16-04-2026
+String chats[]={"panipuri", "bel puri"}------>when we already know what type content and how much to add
+String chats[]=new String[3]---> when we dont know which charts to add bur we know how much to add.(Data never been predicted)  (Data comes during a run time)  (we can access the only one variable from array that is charts.length)
+
+17/04/2026
+Enum---> Is a special type of  java class that is used to create a constants in java file (Enum is used only when the class consisting of limited data) (Enum is used to define a group of constant)
+constant---> Are declared in a Upprecase only eg: LEAVES,
+we does not create object to the enum-----> It internally consists of static data (like LEAVES, BIRTHDAY, FESTIVAL).
+final keyword----> we can't inherit the other class (it can't be re-initialized ) (eg: private static final String LEAVES---> This is the syntax where Enum internally defined) (Another way of defining a constant in
+java rather than Enum keyword)
+//Convert enum to String
+String ref= EnumName.LEAVES.toString();
+SOP(ref)
+//Convert String  to Enum
+EventType eventtype=EventType.valueOf("LEAVES");
+
+HAS-A relationship---> consisting of 4 relationships
+1. one-to-one (unidirectional)
+2.one-to-many (unidirectional)
+3.many-to-one (bidirectional)
+4. many-to-many (bidirectional)
+If two classes don't relate with each other if you want to relate then we use-->HAS-A relationship.(eg: Hospital-Doctor)
+If two classes shares the same common properties and behaviour then we use-----> IS-A relationship(inheritance)
+private data can never be shared to the child
+eg: class Speaker{
+private int price;
+}
+class Speakerchild extends  Speaker{
+}
+
+1.Will static data shared to the child or not?
+Ans:   Yes,  There is  no necessary to create a child object we can called using a Syntax    eg(ChildName.createAccount())
+Example:
+class Parent {
+static int x = 10;
+}
+public class Child extends Parent {
+}
+public class Test {
+public static void main(String[] args) {
+Child.x = 20;
+System.out.println(Child.x);    //o/p:20
+System.out.println(Parent.x);  //o/p: 10
+}
+}
+
+2.WHAT SHOULD I WRITE ALL THE INHERITED CLASSES IN A ONE FILE AND MAKE ALL THE FILE AS PUBLIC??
+Answer:
+One file → One public class
+File name = Public class name
+Other classes → non-public
+Example:
+class Parent {
+static int x = 10;
+}
+	class Child extends Parent {
+			}
+		public class Test {
+    		public static void main(String[] args) {
+       			 Child.x = 20;
+			System.out.println(Child.x);
+        		System.out.println(Parent.x);
+    		}
+	}
+     
+       File name saved as Test.java ( There is only one public class in a file)
+
+WHAT CONTENT TO BE SHARED FROM PARENT TO CHILD
+1.final data--> but can't modified
+2.public, static data
+
+In general
+Method overriding means in general (using a anotation @Override)
+------->When you want to continue the same methods/properties from the parent but not want to implement it
+example:
+class parent{
+public void toBusiness(){
+SOP("Medical business");
+}
+class Child extends parent(){
+@Override  //Not compulsory but child want to fight with parent to change his/her business but they want business (To implement the child data)
+public void  toBusiness(){
+SOP("Tea business");
+}
+}
+main(){
+Child child= new Parent();  //Syntax error can't create a object using a child class
+child.toBusiness();
+Parent parent= new Child(); //called Polymorphism bcz from parent we can create a child object
+parent.toBusiness();
+Polymorphism---> An object behave differentially at a give instance of time called as Polymorphism.
+When polymorphism is achieved then only Method override is achieved
+
+To achieve a Method override :
+1.Inheritance Must be done
+2.The signature of Method should be same in both parent and child
+3.In method override ---> Method name, Method parameter, Method returntype all are same from parent to child ) but implementation (in child)is different
+Two Type Polymorphism:
+compile-time polymorphism---> Method overloading(compile-time polymorphism achieved with the help of Method overloading).
+run-time polymorphism----> Method override( run-time polymorphim achieved with the help of Method overriding same method signature but
+different implementation).
+THERE IS TWO TYPE  OF OUTPUT TITLY AND LOOSLY COUPLONG
+The output of polymorphism to achieve a loosly coupled is good (bcz it has to works on all the senarios) (one functionality works with all the type of data) (All this scenarios build during a run-time polymorphism)
+whenever change in the implementation will not affect the user--> LOOSLY COUPLED.
+whenever change in the implementation will affect the user ---> TITLY COUPLTED
+Two important concept in Abstract------> Interface and Abstract class
+super() constructor is a default constructor in any constructor.
+Parent = Basic features  (Basic information)
+Child = Basic + Extra features (Takes information + Adds extra information)
+
+TWO TYPE OF CASTING IN JAVA
+Primitive casting--> implicit(widening) , explicit(narrowing).
+Object reference--> implicit(upcasting), explicit(downcasting).
+ACCESS SPECIFIER PRIORITY
+public
+protected
+3.default
+private
+private method can't override any (child class) method.
+Default method not accessible outside a class (accessible within the same package)
+protected method can be accessed within the package or outside package/class and it is within inside the (subclass) only and not outside the subclass also and not a executor file also.(ONLY COMES UNDER INHERITANCE).  It can be accessed by creating a public access specifier and pass a protected method inside a public access specifier then call on the executor file easily.
+private method accessed within the same class only!!
+if we want to type cast the value the casting datatypes must be lower value then the provided data values.
+example:  int to short
+polymorphism---> perform loose coupling--->  that says change in implementation that do not affect the users.
+
+HW
+HOW STATIC MEMBER IS SHARED TO THEIR CHILD?
+diff this keyword and this method
+diff super method and super keyword
+if a parent class doesn't contain any default  constructor then non of their extends doesn't contain any constructor.
+if a child and parent having a same variable name that can be separated by using a super keyword
+
+BOXING
+eg: Integer num1= new Integer (100);  // converting primitive to object reference
+int a=10;
+Integer num2=a;   //auto-boxing   ( converting object reference to primitive)
+
+local variable--> scope upto method execution only (stored inside a stack )
+
+class--->1. variable/states ----> 1. class level------> instance, static
+-----> 2. method level----> local, parameter
+      --->2. methods/behavoiur ----->static, instance
+
+HW DIFF BETWEEN PARENT AND CHILD CALSS METHOS USING INHERITANCE
+THERE ARE 5 TYPES OF IMPORT STATEMENT
+standard ---> before class declaration (import packageName. Classname)
+2.Inline import ----> inside class (packageName.ClassName.ref)
+3.static import ---> static import
+magic import (java.lang)
+5.wildcard import---> import java.util.*;   ---> here * is wildcard (it calls every files at a time)
+
+import (two high level imports)---> 1. implicit --->standard, Inline, static, majic, wildcard
+2.Explicit----> majic,  wildcard
+
+OBJECT CLASS (Supermost class) consists of 11 Methods which is given for all its subclasses
+int hashCode();
+String toString();
+boolean equals();
+Class getClass();
+     wait();
+      wait(int);
+       wait(long, int);
+      notify();
+	notifyAll();
+    finalize();
+Object clone() ---> clone means copy
+
+whenever we call  or try to use a any object reference then internal calling of toString() happens belongs to object class
+eg Event event = new Event();
+SOP(event);  //internal calling of toString() happens
+String representation is output of toString()
+.equals and == are both are same in object reference (it compares reference)
+.equals and == in String method (it compares values)
+WHERE CONNECTION HAPPENS FRONTEND TO BACKEND
+WHERE BACKEND CONNECTION HAPPENS (form action)
+
+6-05-2026
+Abstract method--- abstract method are those method which does not contains body  eg:  kyc();
+constrast method--> constract method are those which contains body
+ex:  kyc(){}
+interface defines rules (Is a special type of java method used to define rules) (we can't create a object to the interface like Commercialspace commspace= new Commecialspace not possible) (interface doesn't have any body)
+Abstract consisting of ---> interface which implements using a Class
+Abstraction occurs by the creating a interface class(rules) and creating a object in a implementation class (Logic build here)
+interface class inside a methods  are always public in default
+interface are always act as a media/bridge between user, and the device
+interface consisting of abstract method where does not consisting of body where user/admin does not know what type of implementation to done.
+Using a Abstract keyword we use to create a body to a method or doesn't create a body                      but not in interface keyword in interface we create  a abstract method only (body less method).
+Change in implementation but doesn't affect the user (loosly coupling)--> is the output of Abstraction (loose coupling is achieved with the help of interface)
+Abstraction-----> Hiding the implementation allows the user to access only the functionality with the help of interface is know as abstraction.
+interface---> is also a class--> a special type of class--> provide contract between the two entities (user to ATM).   In Java, an interface acts as a strict contract of behaviors. It defines what a class should do, but leaves the details of how to do it to the classes that implement it.
+interface--> Yen madbeku antha helutthe in simple
+
+HW//// exam (3 methods ), banking-app(transfer method loose coupling)
+1-6-2026
+There are 3 types interface in java
+Custom/UserDefined interface
+built-In Type interface (eg: stack, queue)
+marker interface
+
+In abstract class ------ create abstract method & concrete method.
+In interface-------- consisting of public by default and we  create abstract method whereas java 8 features provides a concrete method by default, static
+Interface purpose is just to provide a rules or just a constract between the user and the device.
+We cannot create a constructor in interface hence object creation is not possible in interface.
+We can create a constructor for abstract class but we cannot create a instance so we can invoke this only through its impl(subclass)  class only.
+In interface by default contains public static final so once we declare a variable like int age then we need to initialize int age=90;
+We cannot create a block in interface that is {}(open and close braket)
+
+
+IMPORTANT INTERVIEW QUESTION
+can a class inherit (extends) multiple classes----> No, bcz one class inherit the one parent class only.
+can a class inherit (extends) only single class----> Yes
+can a class implements the multiple interface---> Yes
+can a interface inherit another interface---> Yes , example class interface Bank implements CurrentAccount(),,, class interface CurrentAccount implements Bank()
+can an interface inherit the class---> No
+can an interface inherit mutiple interfaces---> Yes
+can an interface implements interface---> No
+can an class implements interface and inherit class---> No
+can a class inherit class and implemets interface---> Yes
+can a write a constructor in interface---> No
+can a write a constructor in abstract class---> Yes
+can a write a over-loaded constructor in abstract class--> Yes
+can i over-load a constructor---> Yes
+can i over-ride a constructor--> No
+
+Today--> PatientManagerSystem(Using lombok),  RajGobi(Extends the partial method from interface)
+HW---> Hospital, library, Ecommerce
+Lombok--> Is API, Java Library used to write a boiler plate code in a encapsulated class.
+
+DESIGN PATTERN IN JAVA
+private static SingleTon s= new SingleTon();   //eager  initialization
+private static SingleTon s= null;    //lazy initialization
+ALL THE EXECPTION ARE THROWABLE (Arithmetic Execption, Stack Overflow error, NullPointer Execption)
+Exception--> Unexpected/Unwanted events which will cause the execution of the program. (In java exception is also an object in runtime but it also a class).
+Exception is handles using a keyword---> try, catch
+apache POI---> Is an API which helps to get the data from the excel file.
+TWO TYPES EXCEPTION
+Runtime exception---> unchecked exception.
+Compile exception----> checked exception (need to be handled before compilation of the code)--> eg: IOException, FileNotFound, ClassNotFound, SqiException
+BOTH WILL OCCUR IN A RUNTIME AND HANDLED BY TRY AND CATCH BLOCK.
+Any exception class that extends the Exception/throwable---> checked exception
+Any exception class that extends the RuntimeException---> Unchecked exception
+HW
+OTP sending through the email (Java mail),  Project conversion from python to java,   forgot password send a link to the admin email which will link directly to the change password page. Resume update, Portfoil update, Exception hierarchy analysis.
+WHAT WILL HAPPENS WHEN EXCEPTION OCCURS
+problem occurs---> jvm creates a instance of an exception type---> jvm throws the exception object type---->user handle the exception (if not  program will terminate abnormally)
+Exception is handled by jvm (exception will throw by jvm)
+thows keyword--> is only indicates that  from which method exception occurs (Avoiding the synarios) (used to propogating/spreading the exception is also called stack winding)
+THERE ARE TWO TYPE OF HANDLER
+1.default handler---> main will propogate the exception to the default handler then the default handler will terminate the program.
+2. catch handler
+HW
+oops---> HASA relationship, casting
+
+There are two ways to get the reference of the class
+Using new Keyword
+Using Class.forName(class name)---> forName is a static method, forName which helps to load the class name to the jvm
+
+throw refname & throws exceptionName ---> are used in both checked and unchecked exception.
+finally---> Is used to close the costly resource (eg: Scanner)
+
+IN INTELIJI WE CAN PUSH THE PROJECT TO THE GITHUB USING A TERMINAL
+git init
+git remote add origin git-hub-url
+--->git remote -v ----> shows both url as same for fetch and push
+3.git checkout -b "new branch name"
+git add .
+git status
+git commit -m "Inital commit"
+git push origin new branch name
+
+24/06/2026

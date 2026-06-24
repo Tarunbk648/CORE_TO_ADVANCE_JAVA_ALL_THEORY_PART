@@ -839,3 +839,5 @@ git commit -m "Inital commit"
 git push origin new branch name
 
 24/06/2026
+Dynamic---> means there is no fixed size constraints
+

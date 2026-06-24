@@ -840,4 +840,10 @@ git push origin new branch name
 
 24/06/2026
 Dynamic---> means there is no fixed size constraints
+collection-->Is an object used to manage/represent the other group of object.
+framework--> Is a unified architecture used to represent and manipulate the collection. represents means using a Array, List, Linkedlist etc used to manage collection. unifies architecture consisting of bunch of interface and implementation classes
+collection stored inside a framework
+
+ADVANTAGES OF COLLECTION FRAMEWORK
+1.Reduces the pr
 

@@ -845,5 +845,6 @@ framework--> Is a unified architecture used to represent and manipulate the coll
 collection stored inside a framework
 
 ADVANTAGES OF COLLECTION FRAMEWORK
-1.Reduces the pr
+1.Reduces the programming efforts. 
+2.Increases the performance.
 

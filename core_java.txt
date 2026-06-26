@@ -848,3 +848,6 @@ ADVANTAGES OF COLLECTION FRAMEWORK
 1.Reduces the programming efforts. 
 2.Increases the performance.
 
+
+List---> Indexed based collection or ordered collection. 
+We need to monitor the collection so we use list---> means the data is added in the list is in indexed manner only.

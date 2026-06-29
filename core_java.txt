@@ -853,3 +853,5 @@ List---> Indexed based collection or ordered collection.
 We need to monitor the collection so we use list---> means the data is added in the list is in indexed manner only.
 
 29/06/2026
+ArrayList--> Creates a array with the default capacity of 10
+once the size is beyond the capacity of 10 then it creates a new array with the copy of the old capacity 10 + right shift by 1

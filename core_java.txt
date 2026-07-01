@@ -859,3 +859,6 @@ once the size is beyond the capacity of 10 then it creates a new array with the 
 ArrayList--> are built or uses  a Data structure resizable array --> grows every time
 LinkedList--> are built or uses  a Data structure Doubly linked list.
 Set--> uses a Equals and Hashcode to compare the two values does not allow the duplicates.
+
+String---> have a default comparable
+custom data--> does not have a comparable we need to implement it by manual.

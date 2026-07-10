@@ -862,3 +862,9 @@ Set--> uses a Equals and Hashcode to compare the two values does not allow the d
 
 String---> have a default comparable
 custom data--> does not have a comparable we need to implement it by manual.
+
+
+--->    implements symbol
+____>   extends symbol
+
+

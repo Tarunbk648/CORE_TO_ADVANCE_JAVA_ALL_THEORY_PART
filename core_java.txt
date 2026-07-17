@@ -868,3 +868,16 @@ custom data--> does not have a comparable we need to implement it by manual.
 ____>   extends symbol
 
 
+17/07/2026
+List
+
+list.add("Baba");
+list.add("Babu");
+for(Object o:list){
+  list.add("Tarun");   //trying to modify or perform the other operation during a fetching a resource
+}
+OUTPUT--> concurrentModificationException
+
+
+hasNext()--->checks wheather the list has next element
+next()--> iterate a every value similar to the rs.next()--> in jdbc

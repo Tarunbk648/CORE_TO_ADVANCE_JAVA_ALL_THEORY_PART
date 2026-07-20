@@ -883,3 +883,26 @@ hasNext()--->checks wheather the list has next element
 next()--> iterate a every value similar to the rs.next()--> in jdbc
 
 In Map(K,V)--> K and V both are considered as entry (Its a inner interface of map interface). 
+
+
+
+
+20-07-2026
+JAVA 8
+
+1.INTRODUCTION
+why java 8?
+ --> which brings the conciseness in the code.
+---> considered as java as not only as object oriented programming language but also functional language (means every things developed using a methods)
+----> uses lambda and functional interface
+
+CONCEPTS OF JAVA 8
+1. Functional Expression
+2. Lambda Expression
+3. Default and Static Method
+4. Stream API
+5. Method Reference
+6. Date API
+7. Default and Static Method
+
+

@@ -881,3 +881,5 @@ OUTPUT--> concurrentModificationException
 
 hasNext()--->checks wheather the list has next element
 next()--> iterate a every value similar to the rs.next()--> in jdbc
+
+In Map(K,V)--> K and V both are considered as entry (Its a inner interface of map interface). 

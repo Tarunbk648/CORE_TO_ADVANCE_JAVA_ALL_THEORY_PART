@@ -897,7 +897,7 @@ why java 8?
 ----> uses lambda and functional interface
 
 CONCEPTS OF JAVA 8
-1. Functional Expression
+1. Functional Expression/Interface
 2. Lambda Expression
 3. Default and Static Method
 4. Stream API
@@ -910,3 +910,12 @@ Example
 Clock clock=()-> {}   So, return type of lamdba (->) function or lambda Expression are  is clock(reference)    this works only on when the interface consisting of one Abstract method
 
 Functional Interface--> A functional interface is a interface which has only one abstract Method consisting of n number of static and default method.
+
+
+TYPES OF FUNCTIONAL INTERFACE
+Predicate - boolean Test(Type) (used to return the boolean values then goes to predicate)
+Consumer - void accept(Type) --> accept but not return 
+Function - apply (Type) --> apply and consumer
+Supplier - get()
+BiConsumer<Integer, Integer>- accept();  --> because BiConsumer is a inbuilt functional interface so we need to pass the type.
+

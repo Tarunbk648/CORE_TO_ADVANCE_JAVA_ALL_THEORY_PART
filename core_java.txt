@@ -907,4 +907,4 @@ CONCEPTS OF JAVA 8
 
 
 Example
-Clock clock=()-> {}   So, return type of lamdba (->) is clock(reference)
+Clock clock=()-> {}   So, return type of lamdba (->) is clock(reference)    this works only on when the interface consisting of one Abstract method

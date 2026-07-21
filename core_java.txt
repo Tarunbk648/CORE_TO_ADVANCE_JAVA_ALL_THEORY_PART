@@ -919,3 +919,6 @@ Function - apply (Type) --> apply and consumer
 Supplier - get()
 BiConsumer<Integer, Integer>- accept();  --> because BiConsumer is a inbuilt functional interface so we need to pass the type.
 
+
+A lambda expression is a concise way to represent an anonymous function. It is mainly used to implement functional interfaces and reduce boilerplate code.
+

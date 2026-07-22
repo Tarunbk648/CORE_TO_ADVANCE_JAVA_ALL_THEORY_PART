@@ -927,5 +927,5 @@ Supplier - get()
 BiConsumer<Integer, Integer>- accept();  --> because BiConsumer is a inbuilt functional interface so we need to pass the type.
 
 
-
+stream()---> Is a special iterator returns a Stream <dataType> comes under java.util.stream
 

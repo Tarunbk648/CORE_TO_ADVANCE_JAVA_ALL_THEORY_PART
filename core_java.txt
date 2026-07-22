@@ -901,6 +901,7 @@ why java 8?
 ADVANTAGES OF JAVA 8
 1. Code Consiceness --->which reduce boiler plate code
 2. More Reusable and Readable.
+3. Perform the parallel operation
 
 CONCEPTS OF JAVA 8
 1. Functional Expression/Interface

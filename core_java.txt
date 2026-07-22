@@ -896,7 +896,11 @@ why java 8?
 ---> considered as java as not only as object oriented programming language but also functional programming language (means every things developed using a methods)
 ----> Functional Programming is enabled using a Lamdba
 ---> In order to reduce a boiler plate code means repetative code snippet
----> A lambda expression is a concise way to represent an anonymous function. It is mainly used to implement functional interfaces and reduce boilerplate code.
+---> A lambda is a annonymous function without name, return type, access specifier uses a symbol called -> (arrow) .
+
+ADVANTAGES OF JAVA 8
+1. Code Consiceness --->which reduce boiler plate code
+2. More Reusable and Readable.
 
 CONCEPTS OF JAVA 8
 1. Functional Expression/Interface

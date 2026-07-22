@@ -893,8 +893,10 @@ JAVA 8
 1.INTRODUCTION
 why java 8?
  --> which brings the conciseness in the code.
----> considered as java as not only as object oriented programming language but also functional language (means every things developed using a methods)
-----> uses lambda and functional interface
+---> considered as java as not only as object oriented programming language but also functional programming language (means every things developed using a methods)
+----> Functional Programming is enabled using a Lamdba
+---> In order to reduce a boiler plate code means repetative code snippet
+---> A lambda expression is a concise way to represent an anonymous function. It is mainly used to implement functional interfaces and reduce boilerplate code.
 
 CONCEPTS OF JAVA 8
 1. Functional Expression/Interface
@@ -920,5 +922,5 @@ Supplier - get()
 BiConsumer<Integer, Integer>- accept();  --> because BiConsumer is a inbuilt functional interface so we need to pass the type.
 
 
-A lambda expression is a concise way to represent an anonymous function. It is mainly used to implement functional interfaces and reduce boilerplate code.
+
 

@@ -935,3 +935,12 @@ stream()---> Is a special iterator returns a Stream <dataType> comes under java.
 DIFF BETWEEN LAMDBA AND FUNCTIONAL INTERFACE
 --> lambda which gives a implementaion to the functional interface  (means functional interface gives a reference to the lambda function) so the return type of lambda expression is Functional interface   lambda is enabled only when functional interface consisting of one abstract method.
 
+
+STREAM API
+--> stream is an interface
+--> To process bulk of collection object then go for stream.
+---> It is a way to operate on collection in a functional manner without modifying it.
+---> It is also called as a special iterator object.
+--->Which helps to modify the original Collections by creating a copy of original Collection does not modify a original Collection(List, LinkedList, ArrayList)
+
+compareTo---> takes two argument o1, o2 and perform o1-o2 ==> if it is positive then swap otherwise nothing will happens stays there

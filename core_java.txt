@@ -916,7 +916,9 @@ CONCEPTS OF JAVA 8
 Example
 Clock clock=()-> {}   So, return type of lamdba (->) function or lambda Expression are  is clock(reference)    this works only on when the interface consisting of one Abstract method
 
-Functional Interface--> A functional interface is a interface which has only one abstract Method consisting of n number of static and default method.
+FUNCTIONAL INTERFACE
+--> A functional interface is a interface which has only one abstract Method consisting of n number of static and default method.
+--> functional interface provide reference to the lambda expression .so the implementation done by  lambda expression. 
 
 
 TYPES OF FUNCTIONAL INTERFACE
@@ -928,4 +930,8 @@ BiConsumer<Integer, Integer>- accept();  --> because BiConsumer is a inbuilt fun
 
 
 stream()---> Is a special iterator returns a Stream <dataType> comes under java.util.stream
+
+
+DIFF BETWEEN LAMDBA AND FUNCTIONAL INTERFACE
+--> lambda which gives a implementaion to the functional interface  (means functional interface gives a reference to the lambda function) so the return type of lambda expression is Functional interface   lambda is enabled only when functional interface consisting of one abstract method.
 

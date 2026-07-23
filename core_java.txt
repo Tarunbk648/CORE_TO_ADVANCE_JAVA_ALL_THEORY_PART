@@ -943,4 +943,4 @@ STREAM API
 ---> It is also called as a special iterator object.
 --->Which helps to modify the original Collections by creating a copy of original Collection does not modify a original Collection(List, LinkedList, ArrayList)
 
-compareTo---> takes two argument o1, o2 and perform o1-o2 ==> if it is positive then swap otherwise nothing will happens stays there
+compareTo---> takes two argument o1, o2 and perform o1-o2 ==> if it is positive then swap otherwise nothing will happens stays there.

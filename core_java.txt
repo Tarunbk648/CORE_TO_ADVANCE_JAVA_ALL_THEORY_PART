@@ -937,6 +937,7 @@ DIFF BETWEEN LAMDBA AND FUNCTIONAL INTERFACE
 
 
 STREAM API
+--->stream()--comes from collection interface --return type Stream<T>.
 --> stream is an interface
 --> To process bulk of collection object then go for stream.
 ---> It is a way to operate on collection in a functional manner without modifying it.
@@ -944,3 +945,24 @@ STREAM API
 --->Which helps to modify the original Collections by creating a copy of original Collection does not modify a original Collection(List, LinkedList, ArrayList)
 
 compareTo---> takes two argument o1, o2 and perform o1-o2 ==> if it is positive then swap otherwise nothing will happens stays there.
+
+24-07-2026
+Spliterator--> pronouse as special iterator.
+
+TWO METHOD OF CREATING STREAM
+1. pincode.stream();
+2. Stream.of(pincode);
+3. Arrays.stream();
+
+
+Stream perform a two type of  operations
+1. Intermediate  ---the method which returns the Stream then it is called Intermediate operation return the data --example-- filter(), sort(), 
+2. Terminal -- collect the data  just display does not return-- example --- foreach(), reduce(), collect()
+
+*** ReferencePipeline class which gives a implementation to the stream method.
+
+For Knowledge
+1. pincode.foreach()---> foreach comes from iterator interface (reading tye original data) 
+2. pincode.stream().foreach()---> foreach comes from collection interface (reading the stream of data)
+
+

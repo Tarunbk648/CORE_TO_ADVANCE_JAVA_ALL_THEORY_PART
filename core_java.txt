@@ -951,7 +951,7 @@ Spliterator--> pronouse as special iterator.
 
 TWO METHOD OF CREATING STREAM
 1. pincode.stream();
-2. Stream.of(pincode);
+2. Stream.of(pincode);  //pincode is a reference of any collection
 3. Arrays.stream();
 
 
@@ -959,10 +959,21 @@ Stream perform a two type of  operations
 1. Intermediate  ---the method which returns the Stream then it is called Intermediate operation return the data --example-- filter(), sort(), 
 2. Terminal -- collect the data  just display does not return-- example --- foreach(), reduce(), collect()
 
-*** ReferencePipeline class which gives a implementation to the stream method.
+*** ReferencePipeline class which gives a implementation to the stream methods.
 
 For Knowledge
 1. pincode.foreach()---> foreach comes from iterator interface (reading tye original data) 
 2. pincode.stream().foreach()---> foreach comes from collection interface (reading the stream of data)
 
+To convert one Collection to another collection
+collect(Collectors.toSet()) or toList(), toMap
 
+
+STREAM OPERATIONS/ CREATION
+1. Create a Stream 
+       2 ways 
+           a. collectionTypeRef.stream() 
+           b. Stream.of(collectionTypeRef)
+2. Process the Stream 
+    a. Configure the stream --> Intermediate operation (filter(), map(), sorted(), limit(), skip())
+    b. Process the configured stream ---> Terminal operation (collect(), foreach(), flatmap(), max(), min(), reduce())

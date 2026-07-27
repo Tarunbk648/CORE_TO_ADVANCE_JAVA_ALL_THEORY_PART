@@ -977,3 +977,7 @@ STREAM OPERATIONS/ CREATION
 2. Process the Stream 
     a. Configure the stream --> Intermediate operation (filter(), map(), sorted(), limit(), skip())
     b. Process the configured stream ---> Terminal operation (collect(), foreach(), flatmap(), max(), min(), reduce())
+
+
+27/07/2026
+:: --> is called method referencing in java.

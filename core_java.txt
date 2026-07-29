@@ -981,3 +981,6 @@ STREAM OPERATIONS/ CREATION
 
 27/07/2026
 :: --> is called method referencing in java.
+
+29/07/2026
+Collectors.partitioningBy ---> Helps to fetch/print both details like true or false.

@@ -984,3 +984,15 @@ STREAM OPERATIONS/ CREATION
 
 29/07/2026
 Collectors.partitioningBy ---> Helps to fetch/print both details like true or false.
+
+WE GO THROUGH THESE ALL STREAM METHODS
+1.sorted
+2.filter
+3. map
+4. collect.Collector
+5. skip
+6. findFirst
+7. groupBy
+8. PatitionBy
+9. limit
+10. reduce

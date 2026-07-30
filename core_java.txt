@@ -996,3 +996,6 @@ WE GO THROUGH THESE ALL STREAM METHODS
 8. PatitionBy
 9. limit
 10. reduce
+
+30-07-2026
+Read and write the stream related docs.

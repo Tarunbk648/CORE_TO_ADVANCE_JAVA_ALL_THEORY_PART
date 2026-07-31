@@ -999,3 +999,7 @@ WE GO THROUGH THESE ALL STREAM METHODS
 
 30-07-2026
 Read and write the stream related docs.
+
+
+31-07-2026
+apache poi-->It just the dependency used to connect java to excel, spreadsheet

@@ -1003,3 +1003,26 @@ Read and write the stream related docs.
 
 31-07-2026
 apache poi-->It just the dependency used to connect java to excel, spreadsheet
+
+
+
+
+04-08-2026
+Difference Between JDBC and JPA
+JDBC----> Write query---convert to String---store in a database.
+ORM--->Directly convert object to row
+
+ORM (Object-Relational Mapping)
+----> converting object to row  (or) row to object
+----> we does not need to set the query and like (set, get)
+----> ORM is a concept and it is implemented using a Hibernet, iBATIS, MyBatis, eclips, openjpa (All this 5 concepts are Freameworks).
+
+JPA
+---> Is an API 
+---> It consisting of a particular standards.
+---> Instead of developers learning a completely different syntax for every Java ORM framework, they can learn the JPA(Java Persistence API) standard.
+
+
+
+
+

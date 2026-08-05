@@ -1022,7 +1022,10 @@ JPA
 ---> It consisting of a particular standards.
 ---> Instead of developers learning a completely different syntax for every Java ORM framework, they can learn the JPA(Java Persistence API) standard.
 
-
+05-08-2026
+@RequiredArgsConstructor--->@RequiredArgsConstructor is a Lombok annotation that automatically generates a constructor for all final and @NonNull fields, reducing boilerplate code and making constructor injection easier in Spring Boot.
+Entity---> Map dto to table (means setting a data from dto to entity and passing a argument to the dao)
+dto---> Data transfer object required for UI.
 
 
 

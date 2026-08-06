@@ -1028,4 +1028,12 @@ Entity---> Map dto to table (means setting a data from dto to entity and passing
 dto---> Data transfer object required for UI.
 
 
+06/08/2026
+test(package) in Intellji ideais used for testing a data it consisting of a duplicate file
+
+Configuration config= new Configuration();
+config.configure();  //This two lines helps to load the hibernate.xml file
+
+SessionFactory sessionFactory= config. buildSessionFactory();  //Load the Hibernate relating properties
+
 

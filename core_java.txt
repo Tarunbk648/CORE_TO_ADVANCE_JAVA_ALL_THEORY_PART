@@ -1043,3 +1043,5 @@ Load Balancing-----> Same time two person dont save the same data in order to ov
 10-08-2026
 default method---> can be overriden or not by impl classes,provides a backword compactibility , accessed using a refname 
 static method---> cannot be overriden by impl classes, accessed using a class name
+
+Transaction transaction = session.beginTransaction();  //Which helps to commit the data

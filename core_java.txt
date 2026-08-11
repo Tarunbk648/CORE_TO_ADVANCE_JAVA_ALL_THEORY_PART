@@ -1029,10 +1029,10 @@ dto---> Data transfer object required for UI.
 
 
 06/08/2026
-test(package) in Intellji ideais used for testing a data it consisting of a duplicate file
+test(package) in Intellji idea is used for testing a data it consisting of a duplicate file
 
 Configuration config= new Configuration();
-config.configure();  //This two lines helps to      load the hibernate.xml file
+config.configure();  //Checks wheather the .xml(classpath) exists or not //This two lines helps to      load the hibernate.config.xml file  
 
 SessionFactory sessionFactory= config. buildSessionFactory();  //Build the Configuration file
 
@@ -1045,3 +1045,13 @@ default method---> can be overriden or not by impl classes,provides a backword c
 static method---> cannot be overriden by impl classes, accessed using a class name
 
 Transaction transaction = session.beginTransaction();  //Which helps to commit the data
+
+11/08/2026
+ORM--> Is a technique/guidelines which helps to map the object to the database.
+Server---> Is a just a machine in order to manage the data.
+Tomcat---> Is a webserver
+
+THERE ARE THREE TYPES SERVER
+1. Application Server
+2. Web Server
+3. DB Server

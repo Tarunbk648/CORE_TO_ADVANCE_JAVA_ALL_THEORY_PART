@@ -1068,3 +1068,6 @@ JAVA PLATFORMS
 1. JSE (Java Standard Edition)--- core java
 2. JEE (Java Enterprice Edition) --- client ---> backend using a server
 
+
+Adding the project to the server----> Deployment
+

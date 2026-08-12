@@ -1048,10 +1048,21 @@ Transaction transaction = session.beginTransaction();  //Which helps to commit t
 
 11/08/2026
 ORM--> Is a technique/guidelines which helps to map the object to the database.
-Server---> Is a just a machine in order to manage the data.
+Server---> Is a just a machine in order to manage the data, it has a memory in order to host the project, It is used to manage the resources are in Multipurpose Internet Mail Extensions (MIME) type like  (.java file, .html, .pdf etc).
 Tomcat---> Is a webserver
 
 THERE ARE THREE TYPES SERVER
 1. Application Server
 2. Web Server
 3. DB Server
+
+12/08/2026
+client/browser -- send request (URL form)-----> server (manege/host all the resorces)-----> Application/project (backend)
+---> client/browser cannot access the project directly from backend.
+
+SERVLET
+---> Is a java code 
+---> Servlet is a java program which is capable to get the request and send the response to the server 
+
+
+

@@ -1064,5 +1064,7 @@ SERVLET
 ---> Is a java code 
 ---> Servlet is a java program which is capable to get the request and send the response to the server 
 
-
+JAVA PLATFORMS
+1. JSE (Java Standard Edition)--- core java
+2. JEE (Java Enterprice Edition) --- client ---> backend using a server
 

@@ -1048,7 +1048,7 @@ Transaction transaction = session.beginTransaction();  //Which helps to commit t
 
 11/08/2026
 ORM--> Is a technique/guidelines which helps to map the object to the database.
-Server---> Is a just a machine in order to manage the data, it has a memory in order to host the project, It is used to manage the resources are in Multipurpose Internet Mail Extensions (MIME) type like  (.java file, .html, .pdf etc).
+Server---> Is a just a machine/hardware  in order to manage the data, it has a memory in order to host the project, It is used to manage the resources are in Multipurpose Internet Mail Extensions (MIME) type like  (.java file, .html, .pdf etc).
 Tomcat---> Is a webserver
 
 THERE ARE THREE TYPES SERVER
@@ -1066,8 +1066,25 @@ SERVLET
 
 JAVA PLATFORMS
 1. JSE (Java Standard Edition)--- core java
-2. JEE (Java Enterprice Edition) --- client ---> backend using a server
+2. JEE (Java Enterprice Edition) --- client ---> backend using a server , built on top of JSE.  example---> tomcat(primary a web container/application), websphere (full JEE application server) 
+2.JME (Java Micro Edition)---> Tailored for small, resource-constrained device like mobile phones.
 
 
 Adding the project to the server----> Deployment
+
+13/08/2026
+SERVERS
+1. Apache tomcat----> web server
+2. Jboss---> Application server (support JEE platform)
+3. IBM websphere---> Application server (support JEE platform)
+4. Oracle glass fish--> Application server (support JEE platform)
+
+TYPES OF SERVERS
+1. Web server---> used to manage the web application
+2. Application server---> used to manage the Application which is bigger then Web server
+
+Apache Tomcat
+---> founded by ASF (Apache Software Foundation)
+----> Is an open-source software memory-lean web server primarily TO EXECUTE JAVA-BASED WEB APPLICATION
+
 

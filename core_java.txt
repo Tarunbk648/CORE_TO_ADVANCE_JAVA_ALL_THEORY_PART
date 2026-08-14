@@ -1092,3 +1092,8 @@ unmarshal---> converting from .xml to java
 marshal---> converting back from java to .xml
 
 webapps---> which helps to make the project available to the server
+
+Servlet---> Is an API
+TYPES OF SERVLET
+1. HttpServlet
+2. GenericServlet

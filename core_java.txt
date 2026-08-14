@@ -1087,4 +1087,8 @@ Apache Tomcat
 ---> founded by ASF (Apache Software Foundation)
 ----> Is an open-source software memory-lean web server primarily TO EXECUTE JAVA-BASED WEB APPLICATION
 
+xml---> used to configure the user data
+unmarshal---> converting from .xml to java
+marshal---> converting back from java to .xml
 
+webapps---> which helps to make the project available to the server

@@ -1097,3 +1097,11 @@ Servlet---> Is an API
 TYPES OF SERVLET
 1. HttpServlet
 2. GenericServlet
+
+18-08-2026
+jdbc---> API , connection is automatic
+Hibernate----> Framework, connection is off 
+JPA----> Specification/ Standards
+
+SessionFactory -----> build a configuration, store a meta data information (i.e entity), implements a connection pool (SessionFactory build data will passed through the connection pool so session will use one each at a time and build and returns back the connection).
+

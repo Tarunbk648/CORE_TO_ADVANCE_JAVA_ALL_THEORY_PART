@@ -1112,3 +1112,7 @@ In Dao implementation we have to write
 --> Persistence (load)               -----> Configuration (load)
 --> EntityManagerFactory (build)     ----> SessionFactory (build)
 --> EntityManager (execute)          ----> Session (execute)
+
+
+20-08-2026
+

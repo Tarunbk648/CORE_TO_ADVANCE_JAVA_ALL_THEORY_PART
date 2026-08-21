@@ -1103,7 +1103,9 @@ jdbc---> API , connection is automatic
 Hibernate----> Framework, connection is off 
 JPA----> Specification/ Standards
 SessionFactory -----> build a configuration, store a meta data information (i.e entity), implements a connection pool (SessionFactory build data will passed through the connection pool so session will use one each at a time and build and returns back the connection).
-QUERY STRING PARAMETER ---> Are the part of URL which comes after the question mark ? symbol in a query
+
+QUERY STRING PARAMETER ---> Are the part of URL which comes after the question mark ? symbol in a query(means data carried as a key and value pair) (only for GET URL)
+---> when we provide a method:"POST" (then data/ url is carried in the form format)
 
 
 19-08-2026
@@ -1114,5 +1116,18 @@ In Dao implementation we have to write
 --> EntityManager (execute)          ----> Session (execute)
 
 
-20-08-2026
+21-08-2026
+RequestDispatcher----> is used to print the data in the same .jsp page
+PrintWrite---> is used to print thr data in the different page
+
+---> URL passing as a key and value pair then our Request Method is GET
+THERE ARE FOUR TYPES OF REQUEST
+1. GET
+2. PUT
+3. POST
+4. DELETE
+
+
+HTTP---> Support only on local host/ local server
+URL Consists of protocol://domain/resource
 

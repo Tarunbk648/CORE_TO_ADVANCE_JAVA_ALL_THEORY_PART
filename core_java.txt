@@ -1119,15 +1119,30 @@ In Dao implementation we have to write
 21-08-2026
 RequestDispatcher----> is used to print the data in the same .jsp page
 PrintWrite---> is used to print thr data in the different page
-
 ---> URL passing as a key and value pair then our Request Method is GET
-THERE ARE FOUR TYPES OF REQUEST
+
+THERE ARE 9 HTTP REQUEST METHOD
 1. GET
 2. PUT
 3. POST
 4. DELETE
+5. HEAD
+6. PATCH
+7. CONNECT
+8. TRACE
+9. OPTIONS
+
+
+QUESTION MAY ASK ON HTTP REQUEST
+1. POST VS GET
+2. PUT VS PATCH
 
 
 HTTP---> Support only on local host/ local server
-URL Consists of protocol://domain/resource
+URL Consists of protocol://domain/resource?data(key=value)
+            eg:  http://localhost:8080/search?name:tarun
+
+1.what will happens when Client process the request(HTTP URL)
+---> raw data--Connector(check wheather server running in the correct port)--- parse to ----- tomcat will pool the Thread --- consisting of run() method---- inside run() method servlet is called																			ServletRequest
+																				ServletResponse
 

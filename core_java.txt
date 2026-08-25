@@ -1150,3 +1150,20 @@ URL Consists of protocol://domain/resource?data(key=value)
 25-06-2026
 jpql---> works on object data/that is reference name (eg: select en from entity mame) (en is the projection name)
 sql---> works on table (eg: select * from table name)
+
+TYPES OF DOMAIN
+www.google.in(Domain Name)
+www ---> Sub level domain or Low level domain
+google---> Name of the website trying to access
+.in--> Top level domain
+.edu---> education
+
+----> User enter the something in browser and enter on it then it will go in a post format.
+----> User directly enter the URL/ Or clicking on any link then it is get kind of request.
+.ac---> acedemics
+
+
+Idempotent means an operation or function can be applied multiple times without changing the result beyond the initial application
+Methods like GET, PUT, and DELETE are generally idempotent
+Example: The number 1 is idempotent because 1 × 1 = 1 no matter how many times you repeat the multiplication
+

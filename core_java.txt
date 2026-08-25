@@ -1142,7 +1142,11 @@ HTTP---> Support only on local host/ local server
 URL Consists of protocol://domain/resource?data(key=value)
             eg:  http://localhost:8080/search?name:tarun
 
-1.what will happens when Client process the request(HTTP URL)
+1.what will happens when Client process the request(HTTP URL) ?
 ---> raw data--Connector(check wheather server running in the correct port)--- parse to ----- tomcat will pool the Thread --- consisting of run() method---- inside run() method servlet is called																			ServletRequest
 																				ServletResponse
 
+
+25-06-2026
+jpql---> works on object data/that is reference name (eg: select en from entity mame) (en is the projection name)
+sql---> works on table (eg: select * from table name)

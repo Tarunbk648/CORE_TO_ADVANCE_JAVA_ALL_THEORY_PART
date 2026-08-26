@@ -1179,3 +1179,4 @@ Servlet chaining---> Is a chaining from servlet to another resources the resourc
                ---> Servlet chaining is achieved with the help of interface called RequestDispatcher
 
 JSTL---> JSP Standard Tag Library
+$---> called as expression tag in order to render the data as key and value 

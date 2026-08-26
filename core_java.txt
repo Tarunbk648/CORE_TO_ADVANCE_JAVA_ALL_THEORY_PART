@@ -1173,3 +1173,9 @@ find()---> only for int id pk not for non pk value---> internally consisting of 
 getResultList()---> for List<Entity> 
 getSingleResultList()---> for SingleRow
 
+
+ReqyestDispatcher---> Is a interfae used to communicate from one resorce to another resources. And the resource may be .jsp, .jpeg, 
+Servlet chaining---> Is a chaining from servlet to another resources the resource may be .jsp, .html, .image  
+               ---> Servlet chaining is achieved with the help of interface called RequestDispatcher
+
+JSTL---> JSP Standard Tag Library

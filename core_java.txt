@@ -1167,3 +1167,9 @@ Idempotent means an operation or function can be applied multiple times without 
 Methods like GET, PUT, and DELETE are generally idempotent
 Example: The number 1 is idempotent because 1 × 1 = 1 no matter how many times you repeat the multiplication
 
+26-08-2026
+IN ORDER TO READ THE SPECIFIC NAME, ADDRESS STRING TYPE VALUES BY USING JPA WE HAVE
+find()---> only for int id pk not for non pk value---> internally consisting of select * from DominoesEntity where id=1;
+getResultList()---> for List<Entity> 
+getSingleResultList()---> for SingleRow
+

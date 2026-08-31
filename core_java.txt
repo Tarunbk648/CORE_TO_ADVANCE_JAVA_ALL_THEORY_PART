@@ -1187,3 +1187,10 @@ $---> called as expression tag in order to render the data as key and value
 31-08-2026
 taglib---> which helps to load the all the jsp tahs by using a external url (which helps to load all the external tahs of jsp)(called as directive)
 <%@ ---> directive 
+
+RULES TO REMEMBER
+     Query returns										        Java type
+	1. 1 row, 1 column										  Object
+	2. 1 row, 2+ columns 									  Object[]
+    3. Many rows, 1 column                                    List<Object>
+    4. Many rows, 2+ colums                                   List<Object[]>

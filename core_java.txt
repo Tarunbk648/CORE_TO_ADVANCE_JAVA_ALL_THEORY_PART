@@ -29,6 +29,9 @@ primitive: byte, int, float, char, long, double, short,boolean
 char  must initialize with a one value more than one value it converts in ASCII value
 eg: char ch= 'M' + '0' ---> 77+48--- 125 (output= })
 
+31-08-2026
+taglib---> which helps to load all the jsp tags via URL
+
 
 
 static int gender='M' ----> integer takes ASCII value of M (and its compile and run)
@@ -1180,3 +1183,7 @@ Servlet chaining---> Is a chaining from servlet to another resources the resourc
 
 JSTL---> JSP Standard Tag Library
 $---> called as expression tag in order to render the data as key and value 
+
+31-08-2026
+taglib---> which helps to load the all the jsp tahs by using a external url (which helps to load all the external tahs of jsp)(called as directive)
+<%@ ---> directive 

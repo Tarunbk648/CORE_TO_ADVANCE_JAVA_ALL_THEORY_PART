@@ -1194,3 +1194,9 @@ RULES TO REMEMBER
 	2. 1 row, 2+ columns 									  Object[]
     3. Many rows, 1 column                                    List<Object>
     4. Many rows, 2+ colums                                   List<Object[]>
+
+Servlet- to- Servlet Chaining ---:> use URLPattern
+ Ex:  resp. sendRedirect("getAccount");
+      req.getDispatcher("getAccount").forward(req, resp);
+
+Servlet to JSP---- use .jsp file name

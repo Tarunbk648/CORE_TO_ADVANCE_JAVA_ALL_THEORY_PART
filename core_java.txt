@@ -1200,3 +1200,8 @@ Servlet- to- Servlet Chaining ---:> use URLPattern
       req.getDispatcher("getAccount").forward(req, resp);
 
 Servlet to JSP---- use .jsp file name
+
+SCOPE OF SERVLET
+1. Request Scope
+2. Session Scope
+3. Context Scope

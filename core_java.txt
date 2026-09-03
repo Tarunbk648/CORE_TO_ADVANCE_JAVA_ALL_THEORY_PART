@@ -1205,3 +1205,31 @@ SCOPE OF SERVLET
 1. Request Scope
 2. Session Scope
 3. Context Scope
+
+
+03-09-2026
+
+ONCE THE REQUEST COME FROM BROWSER(End-to-End) or Explain the Flow of Servlet?
+---> Servlet is an java object which helps to get the request--->process the request----> and get back some response to the browser.
+1.Tomcat(servlet container) Server will call Connector Component
+2.Connector----> Listen to port convert raw data into Request and Response object.
+3.Server---> will take the object and look for worker thread in the Thread pool where Thread is called by servlet container(TomCat).
+4.Thread(Thread is also an object)---> Consisting of run() instance method(object created by container--> a container is a object used to manage the other object) inside a run method consisting of servlet(interface) implemets a service(req, resp) method which is abstract class extends GenericServlet which will override by the our custom servlet  which helps to get the request -> process the request-> send back response to the   browser.
+
+service----> Is a Only method which takes both get and post request
+HttpServlet---> Convert Normal req and resp into HttpServlet req and resp.
+
+
+WHAT WILL HAPPENS WHEN SERVLET OBJECT IS CREATED? (Servlet LifeCycle)
+----> servlet object is created when client make a first request by using that object doPost, doGet is invoked (The entire servlet object is created only once for onr program)----> container which helps to create a Constructor then instance method(doPost, doGet) will called.
+
+THERE ARE TWO WAYS TO CREATE A SERVLET OBJECT
+1. Wait for Client-request.
+2. At the time of Servlet Started Eg: @Webservlet("/xyz", loadOnStartup= +1) ---> return int.
+
+THERE ARE FOUR PHASES OF SERVLET LIFECYCLE (Starting from object creation to destroy)
+1.Instantiation Phase
+2.Initialization Phase
+3.Service Phase
+4.Destroy Phase
+

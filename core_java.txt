@@ -1202,13 +1202,12 @@ Servlet- to- Servlet Chaining ---:> use URLPattern
 Servlet to JSP---- use .jsp file name
 
 SCOPE OF SERVLET
-1. Request Scope
-2. Session Scope
-3. Context Scope
+1. Request Scope-->Each page (Bcz each page has a different different data)
+2. Session Scope---> Applicable to the all the pages (session for each user)
+3. Context Scope---> Applicable Globally to the all the users (for Application level) (Ex: The http link generated while starting a server)
 
 
 03-09-2026
-
 ONCE THE REQUEST COME FROM BROWSER(End-to-End) or Explain the Flow of Servlet?
 ---> Servlet is an java object which helps to get the request--->process the request----> and get back some response to the browser.
 1.Tomcat(servlet container) Server will call Connector Component
@@ -1223,15 +1222,20 @@ HttpServlet---> Convert Normal req and resp into HttpServlet req and resp.
 WHAT WILL HAPPENS WHEN SERVLET OBJECT IS CREATED? (Servlet LifeCycle)
 ----> servlet object is created when client make a first request by using that object doPost, doGet is invoked (The entire servlet object is created only once for onr program)----> container which helps to create a Constructor then instance method(doPost, doGet) will called.
 
+
+HOW SERVLET IS CALLED?
+---> By the help of Default Constructor create a object(Default constructor is created/invoked by container) , if you write a parameter constructor then the servlet life cycle will not get started from the first phase itself cannot create a parameterized constructor.
+
+
 THERE ARE TWO WAYS TO CREATE A SERVLET OBJECT
 1. Wait for Client-request.
 2. At the time of Servlet Started Eg: @Webservlet("/xyz", loadOnStartup= +1) ---> return int.
 
 THERE ARE FOUR PHASES OF SERVLET LIFECYCLE (Starting from object creation to destroy)
-1.Instantiation Phase
-2.Initialization Phase
-3.Service Phase
-4.Destroy Phase
+1.Instantiation Phase---> Default constructor is called (Servlet Object is created) 
+2.Initialization Phase---> init() called---> initialize the servlet object using a Servlet Config as an argument/parameter (Servlet Config is created). 
+3.Service Phase---> service() called
+4.Destruction Phase---> destroy() called
 
 
 04-09-2026

@@ -1238,6 +1238,7 @@ THERE ARE FOUR PHASES OF SERVLET LIFECYCLE (Starting from object creation to des
 4.Destruction Phase---> destroy() called
 
 
-04-09-2026
-
+07-09-2026
+git---> version control tool that manages the code changes.
+github---> software/platform that stores all our git repositories online and collaborate.
 

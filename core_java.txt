@@ -1272,3 +1272,11 @@ WHAT ARE COMMON PROBLEM FACING ON SERVLET
 4. Every req is mapped to the unique
 
 Spring Framework----> Base project of spring community
+
+Modules to learn
+1. spring core
+2. spring mvc
+3. spring orm
+4. spring JEE(spring web)(for message, email sending)
+
+

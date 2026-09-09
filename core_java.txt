@@ -64,6 +64,22 @@ moving to the old branch ---> git checkout main
 
 Array: collection of refernce of same/similar type
 use of array is: store multi reference in a single refName
+
+ADVANTAGES OF ARRAY
+1. Fast Access---> We can directly access the element using a index. e.g---> numbers[2]   // 30
+2. Easy to use---> Simple structure and easy to understand.
+3. Memory efficient---> Element is stored continuous in a memory so less overhead.
+4. Good for traversing/searching---> We can easily use loop to process all element
+5. Stores same type of data---> This provides a type safety. e.g---> int[] a = {10, 20, 30};
+
+
+DISADVANTAGES OF ARRAY
+1. Fixed Size---> Once array is created its size cannot be changed. e.g---> int[] a = new int[5];
+2. Insertion is expensive---> Insertion requires a shifting of element.
+3. Deletion is expensive---> Deletion requires a shifting of element.
+4. Wasted memory can occur---> If we have array of size 100 we use 20 then remaining is unused
+5. Same data type---> A normal java array is designed to hold the same type.  e.g---> int[] a = {10, 20, 30};
+
 Declaration and initialization:
      Datatype ref[]={ref1, ref2,ref3};
 eg: String[] teaNames[]={"green chaa", "almond chaa"};
@@ -1280,4 +1296,7 @@ Modules to learn
 3. spring orm
 4. spring JEE(spring web)(for message, email sending)
 
+
+09-09-2026
+Servlet---> We perform the Request Processing/Navigator Logic.
 

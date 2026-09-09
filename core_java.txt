@@ -1269,7 +1269,7 @@ WHAT ARE COMMON PROBLEM FACING ON SERVLET
 1. Lot of object are created like every time it creates 4 objects(servlet, Servletconfig) and  req, resp for second object req, resp is created again.
 2. processing the data
 3. bulk coding
-4. Every req is mapped to the unique
+4. Every req is mapped to the unique servlet.
 
 Spring Framework----> Base project of spring community
 

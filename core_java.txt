@@ -1262,7 +1262,7 @@ Spring---> Build to overcome the common problem of servlet
 			It is a open-source java framework
 			Idea to develop and maintain the Enterprise application (Enterprise means the application which got a revenue).
 	        It is implementation of IOC(Inversion of control)
-            It is an important integration technology.
+            It is an important integration technology (Integration technology means Technology used to connect the two or more application so they share the resources and data with each 				others).
 			It is used to manage components for application.
 
 WHAT ARE COMMON PROBLEM FACING ON SERVLET

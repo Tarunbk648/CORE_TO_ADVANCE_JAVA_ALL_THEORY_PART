@@ -22,6 +22,7 @@ for int=0, char=space, string=null ---> default value show in terminal when does
 
 
 Two types of Data Types
+DataType---> Data Type means what kind of value reference/variable can hold.
 primitive: byte, int, float, char, long, double, short,boolean
 **object reference/non-primitive(**Every name should start with uppercase eg:Array) : Array, String, class, interface, custom class name
 

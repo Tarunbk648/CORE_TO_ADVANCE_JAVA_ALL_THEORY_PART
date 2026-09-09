@@ -1299,4 +1299,7 @@ Modules to learn
 
 09-09-2026
 Servlet---> We perform the Request Processing/Navigator Logic.
+AC---> Application Context is a interface in java perspective and container for Spring to manage all our component but logic is written by user.
+
+
 

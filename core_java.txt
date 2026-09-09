@@ -1301,5 +1301,8 @@ Modules to learn
 Servlet---> We perform the Request Processing/Navigator Logic.
 AC---> Application Context is a interface in java perspective and container for Spring to manage all our component but logic is written by user.
 
+TO MANAGE OUR ALL COMPONENT IN A SPRING
+---> Pass a MetaData information in the form of two type xml and annotation.
+
 
 

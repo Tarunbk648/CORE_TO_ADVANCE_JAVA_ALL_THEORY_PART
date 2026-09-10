@@ -1285,7 +1285,10 @@ Spring---> Build to overcome the common problem of servlet
 			Idea to develop and maintain the Enterprise application (Enterprise means the application which got a revenue).
 	        It is implementation of IOC(Inversion of control)
             It is an important integration technology (Integration technology means Technology used to connect the two or more application so they share the resources and data with each 				others).
-			It is used to manage components for application.
+			It is used to manage components for application. (eg of components: Controller, Beans, Service, Dao/Repo)
+
+Beans---> Beans is an java object managed by spring container (spring 
+
 
 WHAT ARE COMMON PROBLEM FACING ON SERVLET
 1. Lot of object are created like every time it creates 4 objects(servlet, Servletconfig) and  req, resp for second object req, resp is created again.
@@ -1309,5 +1312,6 @@ AC---> Application Context is a interface in java perspective and container for 
 TO MANAGE OUR ALL COMPONENT IN A SPRING
 ---> Pass a MetaData information in the form of two type xml and annotation.
 
-
-
+--> @Bean is method level annotation
+--> @Component is a class level annotation.
+  

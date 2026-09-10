@@ -610,6 +610,11 @@ HAS-A relationship---> consisting of 4 relationships
 4. many-to-many (bidirectional)
 If two classes don't relate with each other if you want to relate then we use-->HAS-A relationship.(eg: Hospital-Doctor)
 If two classes shares the same common properties and behaviour then we use-----> IS-A relationship(inheritance)
+
+
+---> Inheritance (IS-A) generally creates tight coupling, while HAS-A with interfaces/dependency injection is commonly used to achieve loose coupling.
+
+
 private data can never be shared to the child
 eg: class Speaker{
 private int price;

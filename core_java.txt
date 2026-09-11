@@ -1287,7 +1287,7 @@ Spring---> Build to overcome the common problem of servlet
             It is an important integration technology (Integration technology means Technology used to connect the two or more application so they share the resources and data with each 				others).
 			It is used to manage components for application. (eg of components: Controller, Beans, Service, Dao/Repo)
 
-Beans---> Beans is an java object managed by spring container (spring 
+Beans---> Beans is an java object managed by spring container.
 
 
 WHAT ARE COMMON PROBLEM FACING ON SERVLET
@@ -1312,6 +1312,28 @@ AC---> Application Context is a interface in java perspective and container for 
 TO MANAGE OUR ALL COMPONENT IN A SPRING
 ---> Pass a MetaData information in the form of two type xml and annotation.
 
---> @Bean is method level annotation
---> @Component is a class level annotation.
+--> @Bean is method level annotation to manage the inbuilt method.
+--> @Component is a class level annotation which comes through the @ComponentScan. It looks only default constructor. manage our custom method.
+---->@ComponetnScan-----> used to scan the component automatically create the object let container know in which pacakage the @Component is there.
+---> @Configuration--->Is an object. In which class we mention the @Configuration then that class consisting of group of @Bean (Indicates that a class declares one or more @Bean method)
+--->ALL THESE THREE ANNOTATION ARE USED TO REGISTER THE BEAN TO THE CONTAINER(SPRING)
+
+EXPLICITLY DONE BY WRITTING
+public Aircraft (){
+   return new Aircraft();
+}
+
+@Autowired----> if we want the @Component to create a object of a class by using a PARAMETERIZED CONSTRUCTOR.
+*** Instead of default constructor inside a class if we pass parameter constructor it will throws the UnsatisfiedDependencyException 
+
+Servlet Container cannot create a object for the parameterized constructor but in spring by using a @Autowired and @Value we can invoke a constructor and create a object
   
+11-09-2026
+HW 
+new keyword
+Hashmap working and implementation
+@Bean vs @Configuration vs @Component
+import statement
+
+
+@Target---> Is the one which tells the where this (@Bean vs @Configuration vs @Component) annotation are used.

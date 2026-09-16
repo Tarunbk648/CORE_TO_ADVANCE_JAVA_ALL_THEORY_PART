@@ -1322,9 +1322,10 @@ EXPLICITLY DONE BY WRITTING
 public Aircraft (){
    return new Aircraft();
 }
+*** Instead of default constructor inside a class if we pass parameter constructor it will throws the UnsatisfiedDependencyException  so by using a @Autowired
 
-@Autowired----> if we want the @Component to create a object of a class by using a PARAMETERIZED CONSTRUCTOR.
-*** Instead of default constructor inside a class if we pass parameter constructor it will throws the UnsatisfiedDependencyException 
+@Autowired----> if we want the @Component to create a object of a class by using a PARAMETERIZED CONSTRUCTOR and it will inject a means make/set a connection to one class to another(Bean-to-Bean).
+
 
 Servlet Container cannot create a object for the parameterized constructor but in spring by using a @Autowired and @Value we can invoke a constructor and create a object
   
@@ -1337,3 +1338,8 @@ import statement
 
 
 @Target---> Is the one which tells the where this (@Bean vs @Configuration vs @Component) annotation are used.
+
+16-09-2026
+@Bean--> By default iy is in singleton (restrict the class to create only one object)
+@Scope(value="prototype") ---> change the scope of every bean means create a different instance for every class.
+

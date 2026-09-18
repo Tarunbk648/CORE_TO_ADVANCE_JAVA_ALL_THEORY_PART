@@ -1354,8 +1354,8 @@ ex: @Autowired (If we want to initialize/inject a Custom type then we use @Autow
 @Autowired---> we can write it on above custom property name, above constructor, above setter custom method 
 
 DEPENDENCY INJECTION WORKS ON TWO TIME PERIOD
-Dependency--> class dependent on another class (compile time)
-Injection---> one object dependent on another object (Run Time)
+Dependency--> class dependent/ref on another class (compile time)
+Injection---> one object dependent/ref on another object (Run Time)
 The process of referring the dependent object called Dependency Injection (means class- class and object-object)
 
 TWO WAYS TO PERFORM THE DEPENDENCY INJECTION

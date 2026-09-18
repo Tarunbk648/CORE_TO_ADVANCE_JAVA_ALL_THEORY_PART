@@ -1343,3 +1343,24 @@ import statement
 @Bean--> By default iy is in singleton (restrict the class to create only one object)
 @Scope(value="prototype") ---> change the scope of every bean means create a different instance for every class.
 
+
+18-09-2026
+IOC---> Its a  Design principle. It states invert the control of object to someone like External Entities ( some means AC) (why it is make bcz spring framework implements the IOC)
+
+Dependency Injection (Has-A)--->Is a implementation/way to achieve the IOC Principle Which says that one class dependent on another class, It is achieved with the help of @Autowired
+ex: @Autowired (If we want to initialize/inject a Custom type then we use @Autowired)
+    private Board board
+
+@Autowired---> we can write it on above custom property name, above constructor, above setter custom method 
+
+DEPENDENCY INJECTION WORKS ON TWO TIME PERIOD
+Dependency--> class dependent on another class (compile time)
+Injection---> one object dependent on another object (Run Time)
+The process of referring the dependent object called Dependency Injection (means class- class and object-object)
+
+TWO WAYS TO PERFORM THE DEPENDENCY INJECTION
+1. @Autowired/ Setter Injection 
+2. Using Parameter Constructor and add a @Autowired at the top of that
+
+HW
+Diff Between Spring and IOC

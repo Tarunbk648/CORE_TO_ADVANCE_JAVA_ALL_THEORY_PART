@@ -1345,7 +1345,7 @@ import statement
 
 
 18-09-2026
-IOC---> Its a  Design principle. It states invert the control of object to someone like External Entities ( some means AC) (why it is make bcz spring framework implements the IOC)
+IOC---> Its a  Design principle. It states invert the control of object to someone like External Entities ( some means AC) (why it is make bcz spring framework implements the IOC entire spring built on IOC)
 
 Dependency Injection (Has-A)--->Is a implementation/way to achieve the IOC Principle Which says that one class dependent on another class, It is achieved with the help of @Autowired
 ex: @Autowired (If we want to initialize/inject a Custom type then we use @Autowired)

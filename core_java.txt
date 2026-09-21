@@ -1332,6 +1332,8 @@ Servlet Container cannot create a object for the parameterized constructor but i
 11-09-2026
 HW 
 new keyword
+static
+Hashcode and toString 
 Hashmap working and implementation
 @Bean vs @Configuration vs @Component
 import statement

@@ -1372,7 +1372,8 @@ Spring MVC---> IS a Design Principle used to build the web applications.
 
 22-09-2026
 FOUR IMPORTANT FLOW OF SPRING MVC
-1.dispatcher servlet
+1.dispatcher servlet(created during the servlet is start)---> given by spring but managed by tomcat server  by using a annoted class AbstractAnnotationConfigDispatcherServletInitializer
 2.Handler Mapping
 3.controller
 4.view resolver
+

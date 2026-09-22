@@ -1366,3 +1366,13 @@ TWO WAYS TO PERFORM THE DEPENDENCY INJECTION
 
 HW
 Diff Between Spring and IOC
+Diff Between IOC And Qualifier
+
+Spring MVC---> IS a Design Principle used to build the web applications.
+
+22-09-2026
+FOUR IMPORTANT FLOW OF SPRING MVC
+1.dispatcher servlet
+2.Handler Mapping
+3.controller
+4.view resolver

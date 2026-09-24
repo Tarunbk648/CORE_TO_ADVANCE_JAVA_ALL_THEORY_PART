@@ -1230,7 +1230,7 @@ SCOPE OF SERVLET
 
 
 03-09-2026
-ONCE THE REQUEST COME FROM BROWSER(End-to-End) or Explain the Flow of Servlet?
+ONCE THE REQUEST MADE FROM BROWSER(End-to-End) or Explain the Flow of Servlet?
 ---> Servlet is an java object which helps to get the request--->process the request----> and get back some response to the browser.
 1.Tomcat(servlet container) Server will call Connector Component
 2.Connector----> Listen to port convert raw data into Request and Response object.
@@ -1371,9 +1371,13 @@ Diff Between IOC And Qualifier
 Spring MVC---> IS a Design Principle used to build the web applications.
 
 22-09-2026
-FOUR IMPORTANT FLOW OF SPRING MVC
-1.dispatcher servlet(created during the servlet is start)---> given by spring but managed by tomcat server  by using a annoted class AbstractAnnotationConfigDispatcherServletInitializer
-2.Handler Mapping
+FOUR IMPORTANT FLOW(COMPONENT) OF SPRING MVC
+1.dispatcher servlet(created during the servlet is start)---> given by spring but managed by tomcat server  by using a annoted class AbstractAnnotationConfigDispatcherServletInitializer, At the time of dispatcher servlet initialization at Runtime it will create a webApplication servlet.
+2.Handler Mapping---> Builts the connection by taking the URL and provides a controller page in which handler data is available.
 3.controller
 4.view resolver
+
+WHAT WILL HAPPENS WHEN THE CLIENT MAKE A REQUEST IN SPRING?
+FCDP---> Front Controller Design Pattern
+
 

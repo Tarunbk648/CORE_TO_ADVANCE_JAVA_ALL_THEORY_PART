@@ -1382,7 +1382,7 @@ FCDP---> Front Controller Design Pattern
 
 28-09-2026
 Transaction---> set of units perform the operation 
-Transaction is used to perfrom the 4 acid property
+Transaction is used to perform the 4 acid property
 1. Automacity
 2.Consistency
 3. Durability

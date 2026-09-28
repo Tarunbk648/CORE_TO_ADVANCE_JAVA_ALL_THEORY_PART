@@ -1372,13 +1372,52 @@ Spring MVC---> IS a Design Principle used to build the web applications.
 
 22-09-2026
 FOUR IMPORTANT FLOW(COMPONENT) OF SPRING MVC
-1.dispatcher servlet(created during the servlet is start)---> given by spring but managed by tomcat server  by using a annoted class AbstractAnnotationConfigDispatcherServletInitializer, At the time of dispatcher servlet initialization at Runtime it will create a webApplication servlet.
+1.Dispatcher servlet(created during the servlet is start)---> given by spring but managed by tomcat server  by using a annoted class AbstractAnnotationConfigDispatcherServletInitializer, At the time of dispatcher servlet initialization at Runtime it will create a webApplication servlet. Dispatcher servlet is also called as---> (bcz starts from dispatcher servlet and come back to dispatcher servlet)---> FCDP---> Front Controller Design Pattern
 2.Handler Mapping---> Builts the connection by taking the URL and provides a controller page in which handler data is available.
 3.controller
 4.view resolver
 
-WHAT WILL HAPPENS WHEN THE CLIENT MAKE A REQUEST IN SPRING?
-FCDP---> Front Controller Design Pattern
+QUESTION: TWO PHASES OF SPRING APPLICATION STARTUP?
+
+ 1. AT THE TIME OF SERVER STARTUP (During a dispatcher servlet phase 1 it will also initializes the WebApplicationContext (Container) to manages the data/ To register our configuration file)
+ANSWER: 
+
+===> AbstractAnnotationConfigDispatcherServletInitializer 
+===> public abstract class AbstractAnnotationConfigDispatcherServletInitializer extends AbstractDispatcherServletInitializer 
+===> public abstract class AbstractDispatcherServletInitializer extends AbstractContextLoaderInitializer 
+    @Override
+	public void onStartup(ServletContext servletContext) throws ServletException {
+		super.onStartup(servletContext);
+		registerDispatcherServlet(servletContext);
+	}
+(inside registerDispatcherServlet) ===> protected void registerDispatcherServlet(ServletContext servletContext){
+                                       WebApplicationContext servletAppContext = createServletApplicationContext();} 
+(inside createServletApplicationContext)===> protected abstract WebApplicationContext createServletApplicationContext();
+     										 @Override
+	 										 protected WebApplicationContext createServletApplicationContext() { 
+        									 context.register(configClasses);}   ====> this will register our configuration.class 
+
+
+
+
+2. WHAT WILL HAPPENS WHEN CLIENT MAKE A REQUEST AFTER THE SERVER STARTUP (TOMCAT SERVER) IN SPRING ? OR WHAT HAPPENS WHEN A CLIENT SEND A FORM OR SUBMIT PAGES VIA UI/UX?
+ANSWER:
+  
+===> public abstract class HttpServletBean extends HttpServlet (HttpServlet data is given to the spring by creating a  HttpServletBean abstract class its like a bridge between HttpServlet and spring) 
+===> public abstract class FrameworkServlet extends HttpServletBean implements ApplicationContextAware 
+===>(inside FrameworkServlet)===> protected final void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { try { doService(request, response);} 
+===>(inside doService() method )===> protected abstract void doService(HttpServletRequest request, HttpServletResponse response) throws Exception
+===>(abstract method of doService implements by DispatcherServlet.java)(inside doService() of DispatcherServlet.java)===> try { doDispatch(request, response);} 
+
+===>(inside doDispatch() method=====>(This is a actual class where actual Request is mapping to the Controller class using a mapHandler) protected void doDispatch(HttpServletRequest request, HttpServletResponse response) throws Exception { mappedHandler = getHandler(processedRequest); // Determine handler for the current request. 
+HandlerAdapter ha = getHandlerAdapter(mappedHandler.getHandler()); // Determine handler adapter for the current request.  
+public class RequestMappingHandlerMapping extends RequestMappingInfoHandlerMapping implements MatchableHandlerMapping, EmbeddedValueResolverAware //***Creates RequestMappingInfo instances from type and method-level @RequestMapping annotations in @Controller classes***.
+===> (At Controller Class) @RequestMapping("/")
+                           @Controller  ===> send the data to the view resolver (Controller returns a view name → ViewResolver finds the actual JSP file eg: @PostMapping("save") here,                                                  save is view)
+							===> At final view resolver send view back to the dispatcher Servlet if not throws an 404 error..
+
+
+
 
 28-09-2026
 Transaction---> set of units perform the operation 

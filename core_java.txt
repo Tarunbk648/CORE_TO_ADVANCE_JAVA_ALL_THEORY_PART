@@ -1372,7 +1372,7 @@ Spring MVC---> IS a Design Principle used to build the web applications.
 
 22-09-2026
 FOUR IMPORTANT FLOW(COMPONENT) OF SPRING MVC
-1.Dispatcher servlet(created during the servlet is start)---> given by spring but managed by tomcat server  by using a annoted class AbstractAnnotationConfigDispatcherServletInitializer, At the time of dispatcher servlet initialization at Runtime it will create a webApplication servlet. Dispatcher servlet is also called as---> (bcz starts from dispatcher servlet and come back to dispatcher servlet)---> FCDP---> Front Controller Design Pattern
+1.Dispatcher servlet(created during the servlet is start)---> given by spring but managed by tomcat server  by using a annoted class AbstractAnnotationConfigDispatcherServletInitializer, At the time of dispatcher servlet initialization at Runtime it will create a webApplication servlet. Dispatcher servlet is also called as---->FCDP---> Front Controller Design Pattern---> (bcz starts from dispatcher servlet and come back to dispatcher servlet)
 2.Handler Mapping---> Builts the connection by taking the URL and provides a controller page in which handler data is available.
 3.controller
 4.view resolver

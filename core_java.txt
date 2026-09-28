@@ -1387,3 +1387,9 @@ Transaction is used to perform the 4 acid property
 2.Consistency
 3. Durability
 4. Isolation
+
+BEAN LIFE CYCLE
+1.Bean Creation
+2. Dependency Injection
+3. Post Construct
+4. Pre Destroy

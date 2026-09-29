@@ -1445,7 +1445,8 @@ INTERVIEW QUESTIONS
 8. what is copyConstructor in java?
 9. what is immutable class in java?
 10 what is singleton class in java?
-11. File handling concept in java?
+11. About records in java 17?
+12. File handling concept in java?
 
 
 Concurrency ---->executing a multiple task at same time----> ex--> connecting a two or more db to the same program.

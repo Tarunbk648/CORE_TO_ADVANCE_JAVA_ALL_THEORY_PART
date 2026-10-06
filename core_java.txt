@@ -1453,4 +1453,5 @@ Concurrency ---->executing a multiple task at same time----> ex--> connecting a 
 records---> Is a type in java available in java 17+. In order to overcome the setter and getter method we use the record directly. And it cannot be inherited because it is immutable in java.
 
 
-30-09-2026
+06-10-2026
+.jsp--> Is Server side page which dynamically write/return the html data.

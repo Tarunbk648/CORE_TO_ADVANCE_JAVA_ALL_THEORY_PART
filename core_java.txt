@@ -1455,3 +1455,8 @@ records---> Is a type in java available in java 17+. In order to overcome the se
 
 06-10-2026
 .jsp--> Is Server side page which dynamically write/return the html data.
+
+18-10-2026
+what is the difference between distributed version control vs distributed revision control?
+Ans:    
+	In software development, distributed version control (also known as distributed revision control) is a form of version control in which the complete codebase, including its full history, is mirrored on every developer's computer.Compared to centralized version control, this enables automatic management branching and merging, speeds up most operations (except pushing and fetching), improves the ability to work offline, and does not rely on a single location for backups.Git, the world's most popular version control system,is a distributed version control system.

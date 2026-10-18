@@ -1456,7 +1456,73 @@ records---> Is a type in java available in java 17+. In order to overcome the se
 06-10-2026
 .jsp--> Is Server side page which dynamically write/return the html data.
 
+
+
+
 18-10-2026
-what is the difference between distributed version control vs distributed revision control?
+
+DISTRIBUTED VERSION CONTROL TOOL GIT
+
+1. Why was Git introduced?
+Ans:
+	Git was created in 2005 to manage the Linux kernel's source code. It addressed limitations of older version-control systems like CVS(Concurrent) and SVN(Subversion).
+1. Problems with CVS and SVN
+- Centralized system: They rely on a central repository for many important operations.
+- Offline limitations: Working with the central repository's history and sharing changes is less convenient when offline.
+- Branching and merging: Git makes these operations efficient and flexible.
+- Speed: Git performs many operations locally, so they are usually fast.
+
+2. what is the difference between distributed version control vs distributed revision control?
 Ans:    
 	In software development, distributed version control (also known as distributed revision control) is a form of version control in which the complete codebase, including its full history, is mirrored on every developer's computer.Compared to centralized version control, this enables automatic management branching and merging, speeds up most operations (except pushing and fetching), improves the ability to work offline, and does not rely on a single location for backups.Git, the world's most popular version control system,is a distributed version control system.
+
+3. What happens when you exeute the command git init?
+Ans:
+	The git init command creates a
+hidden directory, called .git, at the top level of your project.
+
+
+4. Where is version control metadata information stored in git? or Version control info like file changes, version changes  stored in git?
+Ans:
+	Normally stores repository metadata and history in a single .git directory at the root of the project.
+
+5. What does git add . in this command "." dot indicates what?
+Ans:
+	The argument ., the single period or “dot” in Unix parlance, is shorthand for the
+	current directory
+
+6. What is the use of git configure?
+Ans:
+	1. If you don't configure username and email
+		Git uses your username and email to identify the author of each commit.
+		For example, if you run:
+		git add .
+		git commit -m "First commit"
+
+		Git may show an error like:
+
+		Author identity unknown
+		Please tell me who you are.
+
+     To fix it, configure your name and email:
+	   git config --global user.name "Your Name"
+	   git config --global user.email "you@example.com"
+
+
+ 2. If you don't configure a remote repository
+		You can still create a local Git repository, add files, and commit changes. However, you cannot push your commits to a remote repository such as GitHub until you set up the remote.
+		git remote add origin https://github.com/username/repository.git
+		git push -u origin main
+
+		Overall means if we don't configure the git the local repo( c or d drive)  shows error during the commit time and whereas in remote repo( Git hub repo) we are unable to push the 			commited data means local repo data.
+
+
+7. Is there any other way to configure the git?
+Ans: 
+	Yes, You can also tell Git your name and email address using the GIT_AUTHOR_NAME and
+		 GIT_AUTHOR_EMAIL environment variables. If set, these variables override all configuration settings.
+
+
+8. How to view the git commit or How the user view the past and present commited data?
+Ans:
+	Yes, User can view the all the commits by using a command called  git log. 

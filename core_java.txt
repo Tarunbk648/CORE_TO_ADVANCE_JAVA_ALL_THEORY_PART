@@ -1526,3 +1526,46 @@ Ans:
 8. How to view the git commit or How the user view the past and present commited data?
 Ans:
 	Yes, User can view the all the commits by using a command called  git log. 
+
+
+9. What happens when use perform a git add . command? Or What is the use of index in git?
+Ans:
+	1. Working Directory
+	  Where you create or modify files.
+			|
+			git add .  (Adds changes to the index)
+            |
+	2. Index (Staging Area)
+   Holds the changes selected for the next commit.
+            |
+        git commit (Saves the staged changes into the repository)
+			|
+    3. Git Repository
+    Stores committed versions of your project.
+
+
+10. How git object types are stored OR In which format git object are stored?
+Ans:
+	 Git object store is organized and implemented as a content-addressable storage system. Object store has a unique name produced by applying SHA1(Secure Hash algorithm 1) to the contents of the object.
+
+
+* Git stores the file's content as a Git object, and the hash of that object is used as its ID.
+  Above defination show like :
+									File content
+									Hello Java
+										|
+								Git calculates the hash
+										|
+									Blob object
+								Stores the content
+							   Hash identifies the object
+
+
+11. What do you mean by artifacts in giit?
+Ans:
+		In Git, an artifact (Git object) refers to data created and stored by Git in its repository.
+			In Git, there are 4 main types of objects:
+			1. Blob – Stores file content.
+			2. Tree – Stores information about directories and filenames.
+			3. Commit – Stores information about a committed version of the project.
+			4. Tag – Gives a name to a specific Git object, usually a commit.

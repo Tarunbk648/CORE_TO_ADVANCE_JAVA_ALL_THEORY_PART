@@ -1569,3 +1569,6 @@ Ans:
 			2. Tree – Stores information about directories and filenames.
 			3. Commit – Stores information about a committed version of the project.
 			4. Tag – Gives a name to a specific Git object, usually a commit.
+
+
+12. 

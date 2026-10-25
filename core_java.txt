@@ -44,7 +44,7 @@ stack stores : current line info, return type,  reference name
 constant pool stores the reference values
 
 
-//git bash commands
+//git bash commands for internal creation of .git (local repo creation)
  git clone https://github.com/kaifmr77/Xworkz_arrays_java.git
   ls
    cd Xworkz_arrays_java

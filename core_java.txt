@@ -1571,6 +1571,7 @@ Ans:
 			4. Tag – Gives a name to a specific Git object, usually a commit.
 
 
-12. 
-13.
-14.
+12. In Git Tags are sub categorized into how many types?
+Ans:
+	There are two types
+	      lightweight and annotated.

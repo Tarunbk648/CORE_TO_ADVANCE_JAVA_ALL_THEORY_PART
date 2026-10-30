@@ -1574,4 +1574,4 @@ Ans:
 12. In Git Tags are sub categorized into how many types?
 Ans:
 	There are two types
-	      lightweight and annotated.
+	      lightweight(Actually Creates a temporary object) and annotated (Git actually uses this tags it actually creates a permanant object).

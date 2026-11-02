@@ -1575,3 +1575,5 @@ Ans:
 Ans:
 	There are two types
 	      lightweight(Actually Creates a temporary object) and annotated (Git actually uses this tags it actually creates a permanant object).
+
+13.
